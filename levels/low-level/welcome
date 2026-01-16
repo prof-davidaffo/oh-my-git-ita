@@ -1,10 +1,10 @@
 [description]
 
-This is prototype #1 for the Git learning game by @bleeptrack and @blinry. Thanks for checking it out! <3
+Questo e' il prototipo n.1 del gioco per imparare Git di @bleeptrack e @blinry. Grazie per averlo provato! <3
 
-You can interact with the repository labelled "yours" by typing Bash commands in the terminal below! The visualization will show you its internal status.
+Puoi interagire con il repository etichettato "yours" digitando comandi Bash nel terminale qui sotto! La visualizzazione ti mostrera' il suo stato interno.
 
-Let's get started by initializing an empty Git repository in the current directory by typing:
+Iniziamo inizializzando un repository Git vuoto nella directory corrente digitando:
 
     git init
 
@@ -12,11 +12,11 @@ Let's get started by initializing an empty Git repository in the current directo
 
 Well done!
 
-An empty Git repository is... well, quite empty. The only thing that always exists is a reference called "HEAD" - we'll learn what that is later!
+Un repository Git vuoto e'... beh, davvero vuoto. L'unica cosa che esiste sempre e' un riferimento chiamato "HEAD": scopriremo cos'e' piu' avanti!
 
-But first, let's look at some basics!
+Ma prima, vediamo alcune basi!
 
-(Click "Next Level" as soon as you're ready!)
+(Clicca "Prossimo livello" appena sei pronto!)
 
 [setup]
 

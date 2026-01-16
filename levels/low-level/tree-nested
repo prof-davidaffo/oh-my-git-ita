@@ -1,10 +1,10 @@
 [description]
 
-Trees can also point to other trees! This way, they can describe nested directory structures.
+I tree possono anche puntare ad altri tree! In questo modo possono descrivere strutture di directory annidate.
 
-When you add a file inside of a directory to the index, and then call `git write-tree`, it will create a nested tree for the directory, and attach the blob to it.
+Quando aggiungi un file dentro una directory all'index e poi chiami `git write-tree`, verra' creato un tree annidato per la directory e il blob verra' collegato a quello.
 
-To solve this level, build a little stick figure, as shown on the left - a tree that points to two blobs, as well to a tree that points to two blobs.
+Per risolvere questo livello, costruisci un omino stilizzato come mostrato a sinistra: un tree che punta a due blob e a un tree che punta a due blob.
 
 [setup]
 

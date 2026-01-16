@@ -1,20 +1,20 @@
-title = Merging popped stash
+title = Merge di uno stash poppato
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-When you want to re-apply your changes but you already continued working on your file, you might get
-a merge conflict! Let's practice this situation.
-Pop the changes from the stash with
+Quando vuoi riapplicare le modifiche ma hai gia' continuato a lavorare sul file, potresti ottenere
+un conflitto di merge! Facciamo pratica con questa situazione.
+Fai pop delle modifiche dallo stash con
     git stash pop
-and resolve the merge conflict. Commit the resolved changes and clear the stash stack afterwards.
+e risolvi il conflitto di merge. Fai il commit delle modifiche risolte e poi svuota lo stack dello stash.
 
 ---
-tipp1
+suggerimento1
 ---
-tipp2
+suggerimento2
 ---
-tipp3
+suggerimento3
 
 [setup]
 
@@ -51,4 +51,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-Yay, you got your changes back! :)
+Evviva, hai riavuto le tue modifiche! :)

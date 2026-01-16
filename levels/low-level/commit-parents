@@ -1,12 +1,12 @@
 [description]
 
-When using the commit-tree command, you can optionally specify a parent:
+Quando usi il comando commit-tree, puoi specificare facoltativamente un parent:
 
     git commit-tree <tree> -m "Description" -p <parent commit>
 
-Make a string of three commits!
+Crea una catena di tre commit!
 
-Hint: You'll need a tree object. What could be the easiest way to obtain one?
+Suggerimento: ti servira' un oggetto tree. Qual potrebbe essere il modo piu' semplice per ottenerne uno?
 
 [setup]
 

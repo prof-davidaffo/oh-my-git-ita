@@ -1,11 +1,11 @@
-title = Checking out files from the index
+title = Fare checkout dei file dall'index
 cards = add reset-file checkout-file commit
 
 [description]
 
-So you've made changes to your files, but you decide that you don't want to keep them! You can use `git checkout` for that!
+Hai fatto modifiche ai tuoi file, ma decidi che non vuoi tenerle! Per questo puoi usare `git checkout`!
 
-What happens if you have already update the index, like in file c? You have to reset the index first!
+Cosa succede se hai gia' aggiornato l'index, come nel file c? Devi prima resettare l'index!
 
 [setup]
 

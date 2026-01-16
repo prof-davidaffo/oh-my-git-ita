@@ -1,15 +1,15 @@
-title = Abort a merge
+title = Interrompere un merge
 cards = checkout commit-auto merge merge-abort
 
 [description]
 
-Sometimes you want to merge two commits, but a merge conflict occurs that you currently don't want to resolve.
+A volte vuoi fare il merge di due commit, ma si verifica un conflitto che al momento non vuoi risolvere.
 
-In these situations you can abort the merge to merge later. Use
+In queste situazioni puoi interrompere il merge per farlo piu' tardi. Usa
     git merge --abort
-when you are in a merge process.
+quando sei nel processo di merge.
 
-Try to merge both commits and abort the merge afterwards.
+Prova a fare il merge di entrambi i commit e poi interrompilo.
 
 [setup]
 
@@ -51,4 +51,4 @@ test -f .git/secretfile && ! test -f .git/MERGE_HEAD && ! git rev-parse HEAD^^
 
 [congrats]
 
-Aaah, let's merge later...
+Aaah, facciamolo piu' tardi...

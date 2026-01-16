@@ -1,9 +1,9 @@
-title = Make a commit \o/
+title = Fai un commit \o/
 cards = add reset checkout commit
 
 [description]
 
-For practice, make a commit where all files contain an "x"!
+Per esercizio, fai un commit in cui tutti i file contengono una "x"!
 
 [setup]
 

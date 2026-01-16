@@ -1,27 +1,27 @@
-title = Welcome to time travel school!
+title = Benvenuto alla scuola di viaggio nel tempo!
 cards = config-name commit-auto checkout
 
 [description]
 
-You're still pretty confused by everything that's going on. The next day, you decide to enroll in time travel school!
+Sei ancora abbastanza confuso da tutto quello che sta succedendo. Il giorno dopo, decidi di iscriverti alla scuola di viaggio nel tempo!
 
-Your time travel teacher welcomes you: "Hello there! Wanna tell us your name?"
+Il tuo insegnante di viaggio nel tempo ti accoglie: "Ciao! Vuoi dirci come ti chiami?"
 
 [setup]
 
 git config --global user.name "You"
 
-echo "~ Why do you want to learn how to use time machines? ~
+echo "~ Perche' vuoi imparare a usare le macchine del tempo? ~
 
-[ ] To make sure that my cat doesn't eat my homework.
-[ ] So I don't have to keep copies of all my essays.
-[ ] To collaborate with other time travel students.
-[ ] Other, please specify:" > form
+[ ] Per assicurarmi che il mio gatto non mangi i miei compiti.
+[ ] Cosi' non devo tenere copie di tutti i miei temi.
+[ ] Per collaborare con altri studenti di viaggio nel tempo.
+[ ] Altro, specificare:" > form
 
 [actions]
 
-test "$(git config user.name)" != "You" && cat form | grep -v Signature && echo "
-Signature: $(git config user.name)" >> form
+test "$(git config user.name)" != "You" && cat form | grep -v Firma && echo "
+Firma: $(git config user.name)" >> form
 
 [win]
 
@@ -33,6 +33,6 @@ git show main:form | grep '\[[xX]\]'
 
 [congrats]
 
-"We're so glad to have you!
+"Siamo felici di averti con noi!
 
-Git can help you fix problems in the past! It allows you to collaborate with other students of time travel! It's really powerful, and it's really popular! I'll see you for your first lesson tomorrow!"
+Git puo' aiutarti a sistemare problemi nel passato! Ti permette di collaborare con altri studenti di viaggio nel tempo! E' davvero potente, ed e' davvero popolare! Ci vediamo domani per la tua prima lezione!"

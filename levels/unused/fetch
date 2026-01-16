@@ -1,13 +1,13 @@
-title = Fetching from remotes
+title = Fare fetch dai remoti
 cards = checkout fetch commit-auto
 
 [description]
 
-Here, you already have two remotes configured! You can list them using `git remote`.
+Qui hai gia' due remoti configurati! Puoi elencarli usando `git remote`.
 
-Fetch from both, and look at the suggestions.
+Fai fetch da entrambi e guarda le proposte.
 
-Then, make a new commit on top of your original one that introduces a compromise.
+Poi fai un nuovo commit sopra l'originale che introduca un compromesso.
 
 [setup]
 

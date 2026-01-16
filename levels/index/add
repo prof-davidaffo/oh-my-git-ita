@@ -1,13 +1,13 @@
-title = Updating files in the index
+title = Aggiornare i file nell'index
 cards = add commit checkout
 
 [description]
 
-So you start working, and make changes to your files! Git lets you choose which of these changes you want to put in the next commit. This is like updating the index version of that file to the new version.
+Quindi inizi a lavorare e fai modifiche ai tuoi file! Git ti lascia scegliere quali di queste modifiche vuoi mettere nel prossimo commit. E' come aggiornare la versione del file nell'index alla nuova versione.
 
-This allows you to have smaller commits, that describe better what you changed!
+Questo ti permette di avere commit piu' piccoli, che descrivono meglio cosa hai cambiato!
 
-The command for this is the same - `git add`!
+Il comando per questo e' sempre lo stesso: `git add`!
 
 [setup]
 
@@ -35,4 +35,4 @@ test "$(git show main^:c)" != "c"
 
 [congrats]
 
-Well done! Try travelling between the commits using `git checkout`, so you can look at their contents again!
+Ben fatto! Prova a viaggiare tra i commit usando `git checkout`, cosi' puoi rivederne i contenuti!

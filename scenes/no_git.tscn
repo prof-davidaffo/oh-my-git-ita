@@ -30,7 +30,7 @@ margin_right = 1138.2
 margin_bottom = 601.117
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.533333, 0.392157, 0.392157, 1 )
-text = "by bleeptrack & blinry"
+text = "di bleeptrack & blinry"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -43,7 +43,7 @@ margin_right = 1216.13
 margin_bottom = 628.398
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.533333, 0.392157, 0.392157, 1 )
-text = "Original score by winniehell"
+text = "Colonna sonora originale di winniehell"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -62,7 +62,7 @@ __meta__ = {
 visible = false
 margin_right = 351.0
 margin_bottom = 39.0
-text = "Levels"
+text = "Livelli"
 
 [node name="Button3" type="Button" parent="VBoxContainer"]
 visible = false
@@ -73,7 +73,7 @@ text = "Sandbox"
 [node name="Button2" type="Button" parent="VBoxContainer"]
 margin_right = 351.0
 margin_bottom = 39.0
-text = "Sure, I'll install it!"
+text = "Certo, lo installo!"
 
 [node name="Sprite" type="Sprite" parent="."]
 
@@ -94,11 +94,11 @@ margin_left = 20.0
 margin_top = 21.0
 margin_right = 546.0
 margin_bottom = 252.0
-text = "Hi! It seems that you don't have Git installed yet!
+text = "Ciao! Sembra che tu non abbia ancora Git installato!
 
-On Linux, please install it from your package manager, usually the package is called \"git\"!
+Su Linux, installalo dal tuo gestore pacchetti, di solito il pacchetto si chiama \"git\"!
 
-On macOS 10.8 and below, you can download Git from git-scm.com."
+Su macOS 10.8 e versioni precedenti, puoi scaricare Git da git-scm.com."
 autowrap = true
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="levels"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="sandbox"]

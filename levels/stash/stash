@@ -1,19 +1,19 @@
-title = Stashing
+title = Stash
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-You will encounter situations in which you are working on your project but you need to
-put your current changes aside temporarily. To do so, you can use the stash function. Use
+Ti capiteranno situazioni in cui stai lavorando al tuo progetto ma hai bisogno di
+mettere temporaneamente da parte le modifiche correnti. Per farlo, puoi usare la funzione stash. Usa
     git stash push 
 to add your current changes to the stash stack.
 
 ---
-tipp1
+suggerimento1
 ---
-tipp2
+suggerimento2
 ---
-tipp3
+suggerimento3
 
 [setup]
 
@@ -42,4 +42,4 @@ test "$(git stash list | wc -l)" -ge 1
 
 [congrats]
 
-Nice stash you got there! :)
+Bel stash che hai li'! :)

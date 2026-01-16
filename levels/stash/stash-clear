@@ -1,24 +1,24 @@
-title = Clear the Stash
+title = Svuotare lo stash
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-If you want to inspect your stash stack, use the command
+Se vuoi ispezionare lo stack dello stash, usa il comando
     git stash list
     
-Oh, you don't want to keep your stashed changes? There are way too many? Then go ahead and clear the stack with
+Oh, non vuoi tenere le modifiche nello stash? Ce ne sono troppe? Allora svuota lo stack con
     git stash clear
-If you only want to discard a certain stash entry, you can use
+Se invece vuoi scartare solo una voce specifica dello stash, puoi usare
     git stash drop <stash>
     
-Clear your stash stack!
+Svuota lo stack dello stash!
 
 ---
-tipp1
+suggerimento1
 ---
-tipp2
+suggerimento2
 ---
-tipp3
+suggerimento3
 
 [setup]
 
@@ -54,4 +54,4 @@ test "$(git stash list | wc -l)" -eq 0
 
 [congrats]
 
-All clear! :)
+Tutto pulito! :)

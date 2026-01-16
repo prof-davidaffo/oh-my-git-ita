@@ -1,14 +1,14 @@
 [description]
 
-Instead of removing an entry from the index and adding one with the same name, you can also directly update that entry!
+Invece di rimuovere una voce dall'index e aggiungerne un'altra con lo stesso nome, puoi anche aggiornare direttamente quella voce!
 
-Put the content you want in a file with a matching name, and then run
+Metti il contenuto che vuoi in un file con lo stesso nome, poi esegui
 
     git update-index <file>
 
-This will create a new blob, and update the hash of the entry to that blob.
+Questo creera' un nuovo blob e aggiornera' l'hash della voce a quel blob.
 
-Update an entry in the index!
+Aggiorna una voce nell'index!
 
 [setup]
 

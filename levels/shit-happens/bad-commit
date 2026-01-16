@@ -1,16 +1,16 @@
-title = Undo a bad commit
+title = Annullare un commit sbagliato
 cards = reset commit-a
 
 [description]
 
-Oh no, we made a bad commit! How can we undo making the commit, and go back to a point where we can try again?
+Oh no, abbiamo fatto un commit sbagliato! Come possiamo annullarlo e tornare a un punto in cui possiamo riprovare?
 
-The answer is using `git reset [commit]`, which does two things:
+La risposta e' usare `git reset [commit]`, che fa due cose:
 
-- It resets the current branch ref to the commit you specify.
-- And it resets the index to that commit.
+- Resetta il riferimento del branch corrente al commit che specifichi.
+- E resetta l'index a quel commit.
 
-It does not change your working directory in any way, which means that after that, you can try making the commit you want again.
+Non modifica in alcun modo la working directory, il che significa che dopo puoi provare di nuovo a fare il commit che vuoi.
 
 [setup]
 

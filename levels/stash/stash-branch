@@ -1,21 +1,21 @@
-title = Branch from stash
+title = Branch dallo stash
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-If you want to keep your changes but they don't belong to the main branch, you can easily
-create a new branch from your stashed changes. Just use
+Se vuoi tenere le modifiche ma non appartengono al branch main, puoi facilmente
+creare un nuovo branch dalle modifiche nello stash. Usa semplicemente
     git stash branch <branchname> <stash>
-If you just want to use the latest stash entry, you can leave the <stash> option empty.
+Se vuoi solo usare l'ultima voce dello stash, puoi lasciare vuota l'opzione <stash>.
 
-Create a new branch from the stashed changes!
+Crea un nuovo branch dalle modifiche nello stash!
 
 ---
-tipp1
+suggerimento1
 ---
-tipp2
+suggerimento2
 ---
-tipp3
+suggerimento3
 
 [setup]
 
@@ -45,4 +45,4 @@ test "$(git branch --list| wc -l)" -ge 2
 
 [congrats]
 
-Stashed changes are in a new branch! :)
+Le modifiche nello stash sono in un nuovo branch! :)

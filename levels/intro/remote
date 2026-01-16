@@ -1,23 +1,23 @@
-title = Working together
+title = Lavorare insieme
 cards = pull commit-auto push
 
 [description]
 
-Let's add your name to our list of students!
+Aggiungiamo il tuo nome alla nostra lista degli studenti!
 
-I already have a second commit of it in my time machine - let's work together!
+Ho gia' un secondo commit nella mia macchina del tempo - lavoriamo insieme!
 
 [cli]
 
-To go back to old commands, you can press arrow up and down. That way, you don't have to type in long commands twice.
+Per tornare ai comandi precedenti puoi premere freccia su e freccia giu'. Cosi' non devi riscrivere comandi lunghi due volte.
 
 [congrats]
 
-Welcome to time travel school! :) I'll see you for your first class tomorrow!
+Benvenuto alla scuola di viaggio nel tempo! :) Ci vediamo domani per la tua prima lezione!
 
 [setup]
 
-echo "~ List of current students ~" > students
+echo "~ Lista degli studenti attuali ~" > students
 git add .
 git commit -m "Initial version"
 git push -u teacher main

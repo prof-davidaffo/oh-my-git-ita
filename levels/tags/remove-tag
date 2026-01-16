@@ -1,20 +1,20 @@
-title = Removing tags
+title = Rimuovere tag
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-You added way too many tags? No prob! Delete them with
+Hai aggiunto troppi tag? Nessun problema! Eliminali con
 
     git tag -d <tag-name>
     
-Remove all tags in this repo!
+Rimuovi tutti i tag in questo repo!
 
 ---
-tipp1
+suggerimento1
 ---
-tipp2
+suggerimento2
 ---
-tipp3
+suggerimento3
 
 [setup]
 
@@ -50,4 +50,4 @@ test "$(git tag -l | wc -l)" -eq 0
 
 [congrats]
 
-Well done :)
+Ben fatto :)

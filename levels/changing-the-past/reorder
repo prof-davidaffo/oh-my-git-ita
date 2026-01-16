@@ -1,13 +1,13 @@
-title = Reordering events
+title = Riordinare gli eventi
 cards = checkout commit-auto reset-hard rebase-interactive cherry-pick
 
 [description]
 
-Oops, looks like there's something messed up here. Can you put the events back into their correct order?
+Ops, sembra che qui ci sia un pasticcio. Riesci a rimettere gli eventi nell'ordine corretto?
 
-There are two ways to do this: You can drag the "interactive rebase" card to the commit before the one you want to change, then reorder the lines in the file that opens, and save it.
+Ci sono due modi per farlo: puoi trascinare la carta "interactive rebase" sul commit precedente a quello che vuoi cambiare, poi riordinare le righe nel file che si apre e salvarlo.
 
-Or you can reset the main tag to the very first commit, and then cherry-pick single commits in the order you want. You have cards for both approaches!
+Oppure puoi resettare il tag main al primissimo commit, e poi fare cherry-pick dei singoli commit nell'ordine che vuoi. Hai le carte per entrambi gli approcci!
 
 [setup]
 
@@ -75,4 +75,4 @@ git commit -am "Put on shirt"
 
 [congrats]
 
-Feel free to reset the level and try the other strategy! Which one do you like better?
+Sentiti libero di resettare il livello e provare l'altra strategia! Quale ti piace di piu'?

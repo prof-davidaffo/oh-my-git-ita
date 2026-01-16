@@ -1,4 +1,4 @@
-title = Sandbox with three commits
+title = Sandbox con tre commit
 cards = checkout add reset-file checkout-file commit merge rebase
 
 [setup]
@@ -17,10 +17,10 @@ git branch not_main
 
 [description]
 
-Here's a sandbox you can play around in.
+Ecco un sandbox in cui puoi fare prove.
 
-You can use both the playing cards, as well as the terminal. This is a real Git terminal! Fun things to try:
+Puoi usare sia le carte sia il terminale. Questo e' un vero terminale Git! Cose divertenti da provare:
 
-- Make a commit that merges three timelines together at once!
-- Create and delete some tags!
-- Make a timeline that's completely independent of the rest!
+- Fai un commit che unisca tre linee temporali in una sola volta!
+- Crea ed elimina alcuni tag!
+- Crea una linea temporale completamente indipendente dalle altre!

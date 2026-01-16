@@ -1,11 +1,11 @@
-title = No sleep required
+title = Niente sonno richiesto
 cards = file-new file-delete file-rename
 
 [description]
 
-Actually, you decide that you don't need any sleep.
+In realta', decidi che non ti serve dormire.
 
-Because of that, you won't require a bed, and can build some other piece of furniture from the wood!
+Per questo, non ti serve un letto e puoi costruire un altro mobile con il legno!
 
 
 [setup]
@@ -22,6 +22,6 @@ NUM_FILES="$(ls | wc -l)"
 
 [congrats]
 
-Neat! It even still looks a bit comfortable!
+Che bello! Sembra ancora un po' comodo!
 
-You head out, eager for your first lesson at time travel school!
+Esci, impaziente per la tua prima lezione alla scuola di viaggio nel tempo!

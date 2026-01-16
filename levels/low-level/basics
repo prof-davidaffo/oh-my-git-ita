@@ -1,19 +1,19 @@
 [description]
 
-For this prototype, we assume you have some experience with the command line. Here are some commands that will be useful:
+Per questo prototipo, diamo per scontato che tu abbia un po' di esperienza con la riga di comando. Ecco alcuni comandi utili:
 
 - ls
 - echo content > file
 - cat file
 - mkdir dir
 
-Find the riddle in your current directory and put the answer into the file "answer"!
+Trova l'indovinello nella directory corrente e scrivi la risposta nel file "answer"!
 
 [congrats]
 
 Omnomnom!
 
-For technical reasons, you can't use `cd` in this prototype yet. But there won't be a lot of interaction with the file system anyways. :)
+Per ragioni tecniche, in questo prototipo non puoi ancora usare `cd`. Ma non ci sara' molta interazione con il file system comunque. :)
 
 [setup]
 

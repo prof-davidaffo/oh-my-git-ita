@@ -1,18 +1,18 @@
 [description]
 
-After carefully building the index we want, it would be nice to save a permanent snapshot of it, right?
+Dopo aver costruito con cura l'index che vogliamo, sarebbe bello salvarne un'istantanea permanente, vero?
 
-This is what the second type of objects is for: trees! You can convert the index into a tree using
+Questo e' il compito del secondo tipo di oggetti: i tree! Puoi convertire l'index in un tree usando
 
     git write-tree
 
-Try it! :)
+Prova! :)
 
 [congrats]
 
 Nice!
 
-Can you make a different tree? Modify the index, then call `git write-tree` again!
+Riesci a creare un tree diverso? Modifica l'index, poi esegui di nuovo `git write-tree`!
 
 [setup]
 

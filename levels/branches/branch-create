@@ -1,15 +1,15 @@
-title = Creating branches
+title = Creare branch
 cards = checkout commit-auto branch branch-delete reset-hard
 
 [description]
 
-You were invited to two parties! At one of them, your favorite band is playing - and the other one is your best friend's birthday party. Where should you go? No worries - as a time travel agent in training, you can go to both parties!
+Sei stato invitato a due feste! A una suona la tua band preferita, e l'altra e' la festa di compleanno del tuo migliore amico. Dove andare? Niente paura: come agente di viaggio nel tempo in formazione, puoi andare a entrambe!
 
-To make it easier to tell which timeline is which, you can create time portals! (We call these "branches".)
+Per rendere piu' facile capire quale linea temporale e' quale, puoi creare portali temporali! (Li chiamiamo "branch".)
 
 [cli]
 
-Branches also make it really easy to travel between different places using the command line! As soon as you have a branch called "birthday", you can type `git checkout birthday` to travel to it!
+I branch rendono anche molto facile viaggiare tra posti diversi usando la riga di comando! Non appena hai un branch chiamato "birthday", puoi digitare `git checkout birthday` per andarci!
 
 [setup]
 
@@ -39,6 +39,6 @@ git show concert | grep 'to the concert'
 
 [congrats]
 
-Now you can travel between those branches easily (using `git checkout`) - try it!
+Ora puoi viaggiare facilmente tra quei branch (usando `git checkout`) - provalo!
 
-Your friend is happy that you made it to the birthday party and you also got your concert ticket signed. Yay!
+Il tuo amico e' felice che tu sia passato alla festa di compleanno e hai anche fatto autografare il biglietto del concerto. Evviva!

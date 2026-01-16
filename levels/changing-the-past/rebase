@@ -1,13 +1,13 @@
-title = Rebasing
+title = Fare rebase
 cards = checkout commit-auto reset-hard rebase
 
 [description]
 
-Okay - turns out that saving time in the morning by utilizing parallel universes is against the regulations of the International Time Travel Association. You'll have to do your tasks in sequence after all.
+Ok, pare che risparmiare tempo la mattina usando universi paralleli sia contro il regolamento dell'Associazione Internazionale di Viaggio nel Tempo. Dovrai fare le tue attivita' in sequenza, dopotutto.
 
-See the "rebase" card? When you drag it to a commit, it will copy the events in your current timeline after the specified one! This way, make a clean, linear timeline where you visit all three shops.
+Vedi la carta "rebase"? Quando la trascini su un commit, copia gli eventi della tua linea temporale corrente dopo quello specificato! In questo modo puoi creare una linea temporale pulita e lineare in cui visiti tutti e tre i negozi.
 
-Again, we want to make that our base reality - the "main" branch should point to that timeline!
+Di nuovo, vogliamo farne la nostra realta' di base: il branch "main" deve puntare a quella linea temporale!
 
 [setup]
 
@@ -76,11 +76,11 @@ git checkout --detach main
 
 [win]
 
-# Order all tree branches into one and move the main branch ref
+# Riordina tutti e tre i branch in uno solo e sposta il riferimento del branch main
 { git show main:you | grep "You ate.*baguette"; } && { git show main:you | grep "You drank.*coffee"; } && { git show main:you | grep "You ate.*donut"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
 
 [congrats]
 
-Notice how the other timelines and commits are still there - if anything goes wrong, you can also travel back to them.
+Nota come le altre linee temporali e i commit siano ancora li': se qualcosa va storto, puoi tornare indietro anche a quelli.
 
-It's really hard to actually *destroy* stuff with your time machine.
+E' davvero difficile *distruggere* qualcosa con la tua macchina del tempo.

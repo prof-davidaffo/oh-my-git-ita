@@ -1,11 +1,11 @@
-title = Looking into the past
+title = Guardare nel passato
 cards = checkout-from
 
 [description]
 
-You've been working on your essay for a while. But you're not happy with the changes you've made recently. You want to go back to the version called "Best version"!
+Hai lavorato al tuo tema per un po'. Ma non sei felice delle modifiche fatte di recente. Vuoi tornare alla versione chiamata "Best version"!
 
-No problem, you can use the `checkout` card to restore your essay from an older commit!
+Nessun problema, puoi usare la carta `checkout` per ripristinare il tuo tema da un commit piu' vecchio!
 
 [setup]
 
@@ -24,5 +24,5 @@ git commit -a -m "Less-good version"
 
 [win]
 
-# For nostalgic reasons, restore the very first backup you made!
+# Per nostalgia, ripristina il primissimo backup che hai fatto!
 diff essay.txt <(echo "Best version")

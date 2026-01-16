@@ -1,19 +1,19 @@
-title = Branches grow with you!
+title = I branch crescono con te!
 cards = checkout commit-auto branch branch-delete reset-hard
 
 [description]
 
-Note that there are two options to "travel to the end of a timeline":
+Nota che ci sono due opzioni per "viaggiare alla fine di una linea temporale":
 
-First, you can directly travel to the commit, like we've done it before.
+Per prima cosa, puoi viaggiare direttamente al commit, come abbiamo fatto prima.
 
-And second, you can travel to the branch label. In this case, when you make a new commit, the branch will grow with you, and still point at the end of the timeline!
+E poi puoi viaggiare all'etichetta del branch. In questo caso, quando fai un nuovo commit, il branch crescera' con te e continuera' a puntare alla fine della linea temporale!
 
 [cli]
 
-To travel to a branch, type `git checkout name_of_the_branch`.
+Per viaggiare verso un branch, digita `git checkout name_of_the_branch`.
 
-And to travel to the last commit, type `git checkout --detach name_of_the_branch`.
+E per viaggiare all'ultimo commit, digita `git checkout --detach name_of_the_branch`.
 
 [setup]
 

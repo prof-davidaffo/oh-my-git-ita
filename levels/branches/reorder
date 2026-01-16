@@ -1,21 +1,21 @@
-title = Moving branches around
+title = Spostare i branch
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-One of your colleagues messed up here, and put the branches in the wrong timelines!
+Uno dei tuoi colleghi ha fatto un pasticcio qui e ha messo i branch nelle linee temporali sbagliate!
 
-You could delete and re-create these branches - but you can also directly move them to different commits, by using
+Potresti eliminare e ricreare questi branch, ma puoi anche spostarli direttamente su commit diversi usando
 
     git checkout
 
-on the branch names, and then using
+sui nomi dei branch, e poi usando
 
     git reset --hard
 
-on the commit where you want the branch to be.
+sul commit dove vuoi che il branch finisca.
 
-The donut branch is in the right place, but the timeline is still incomplete - make you actually *eat* the donut in that branch!
+Il branch donut e' nel posto giusto, ma la linea temporale e' ancora incompleta: fai in modo di *mangiare* davvero la ciambella in quel branch!
 
 [setup]
 
@@ -86,4 +86,4 @@ git show donut:you | grep "You ate.*donut"
 
 [actions]
 
-test "$(git rev-parse HEAD^)" = "$(git rev-parse donut)" && hint "Remember to checkout the blue branch tag when you want it to grow with the timeline."
+test "$(git rev-parse HEAD^)" = "$(git rev-parse donut)" && hint "Ricorda di fare checkout del tag blu del branch quando vuoi che cresca con la linea temporale."

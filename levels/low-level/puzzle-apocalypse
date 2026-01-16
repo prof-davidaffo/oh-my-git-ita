@@ -1,8 +1,8 @@
 [description]
 
-Delete all objects in this repository using git commands only!
+Elimina tutti gli oggetti in questo repository usando solo comandi git!
 
-Useful commands:
+Comandi utili:
 
     git prune
     git reflog expire

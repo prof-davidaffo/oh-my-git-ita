@@ -1,10 +1,10 @@
 [description]
 
-A commit can have multiple parents! You can specify the -p option multiple times, like this:
+Un commit puo' avere piu' parent! Puoi specificare l'opzione -p piu' volte, cosi':
 
     git commit-tree <tree> -m "Description" -p <parent1> -p <parent2>
 
-Build a rhombus shape from commits, where two commits point to the same parent, and then a fourth commit points to both of them.
+Costruisci una forma a rombo con i commit, dove due commit puntano allo stesso parent e un quarto commit punta a entrambi.
 
 [setup]
 

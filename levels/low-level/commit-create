@@ -1,14 +1,14 @@
 [description]
 
-So a tree describes a directory structure at a specific point in time.
+Quindi un tree descrive una struttura di directory in un momento specifico nel tempo.
 
-It would be nice if we could remember when that state existed, and who authored it, right?
+Sarebbe bello poter ricordare quando quello stato e' esistito e chi l'ha creato, vero?
 
-Enter: commits. They are objects that point to a tree and contain some additional metadata. You can create a commit using
+Entrano in scena i commit. Sono oggetti che puntano a un tree e contengono alcuni metadati aggiuntivi. Puoi creare un commit usando
 
     git commit-tree <tree> -m "Description of your commit"
 
-Make a commit from the tree in this repository!
+Fai un commit dal tree in questo repository!
 
 [setup]
 

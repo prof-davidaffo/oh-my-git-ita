@@ -1,13 +1,13 @@
-title = Make a commit, but faster!
+title = Fai un commit, ma piu' in fretta!
 cards = add reset checkout commit commit-a
 
 [description]
 
-There is a time-saving trick, where instead of a plain `git commit`, you can use
+C'e' un trucco per risparmiare tempo: invece di un semplice `git commit`, puoi usare
 
     git commit -a
 
-This will automatically add all changes you made to local files! Very convenient.
+Questo aggiungera' automaticamente tutte le modifiche ai file locali! Molto comodo.
 
 [setup]
 

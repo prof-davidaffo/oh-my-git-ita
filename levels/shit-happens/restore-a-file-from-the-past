@@ -1,9 +1,9 @@
-title = Restore a file from the past
+title = Ripristinare un file dal passato
 cards = checkout checkout-from commit
 
 [description]
 
-Here's a similar problem: you really liked the essay from the very first commit, and want to have it back! Well, checkout can also restore things from older commits, Here's how:
+Ecco un problema simile: ti piaceva molto il tema del primissimo commit e vuoi riaverlo! Il checkout puo' anche ripristinare cose da commit piu' vecchi. Ecco come:
 
     git checkout [commit] [file]
 

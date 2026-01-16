@@ -1,11 +1,11 @@
-title = Getting the last version
+title = Ottenere l'ultima versione
 cards = checkout-file
 
 [description]
 
-You've been working on your essay for a while. But - ughh! Now your cat walks over your keyboard and "helps you", so now it's all messed up! :/
+Hai lavorato al tuo tema per un po'. Ma... uff! Ora il tuo gatto cammina sulla tastiera e "ti aiuta", quindi e' tutto un disastro! :/
 
-But Git is here to help! To discard all changes your cat made, and go back to the version in the last commit, use `checkout`!
+Ma Git e' qui per aiutarti! Per scartare tutte le modifiche fatte dal gatto e tornare alla versione dell'ultimo commit, usa `checkout`!
 
 [setup]
 

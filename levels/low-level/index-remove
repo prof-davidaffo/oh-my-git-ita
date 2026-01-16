@@ -1,10 +1,10 @@
 [description]
 
-To remove an entry from the index, use a command like this:
+Per rimuovere una voce dall'index, usa un comando come questo:
 
     git update-index --force-remove <file>
 
-Remove all entries from the index!
+Rimuovi tutte le voci dall'index!
 
 [setup]
 

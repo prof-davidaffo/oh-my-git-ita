@@ -1,27 +1,27 @@
 [description]
 
-Blobs usually represent the content of a file. But on their own, they don't have any metadata, not even a name!
+I blob di solito rappresentano il contenuto di un file. Ma da soli non hanno alcun metadato, nemmeno un nome!
 
-Git has a very powerful concept to store metadata related to blobs: the index! It's a list that relates blobs to filenames and access permissions.
+Git ha un concetto molto potente per memorizzare metadati legati ai blob: l'index! E' una lista che collega i blob ai nomi dei file e ai permessi di accesso.
 
-The most convenient option to add an entry to the index is via an existing file:
+L'opzione piu' comoda per aggiungere una voce all'index e' usare un file esistente:
 
     echo "my content" > file
     git update-index --add file
 
-Add three entries to the index! For a bonus challenge: can you add a file that is inside of a directory, like "directory/file"?
+Aggiungi tre voci all'index! Come sfida extra: riesci ad aggiungere un file che e' dentro una directory, come "directory/file"?
 
 [congrats]
 
-There's another way to add an entry to the index directly:
+C'e' un altro modo per aggiungere una voce all'index direttamente:
 
     git update-index --add --cacheinfo <mode>,<blobhash>,<name>
 
-The first three numbers of the mode describe the type of the entry, "100" is a regular file.
+Le prime tre cifre della modalita' descrivono il tipo di voce, "100" e' un file regolare.
 
-The second three number describe the permissions. Only "644" (non-executable) and "755" (executable) are supported.
+Le seconde tre cifre descrivono i permessi. Sono supportati solo "644" (non eseguibile) e "755" (eseguibile).
 
-You can insert the hash of an object into the terminal by right-clicking on it! :)
+Puoi inserire l'hash di un oggetto nel terminale cliccandoci con il tasto destro! :)
 
 [setup]
 

@@ -1,11 +1,11 @@
-title = Delete a file in the next commit
+title = Eliminare un file nel prossimo commit
 cards = add reset-file checkout-file rm file-delete commit
 
 [description]
 
-If you want to remove a file in the next commit, you can use `git rm`! This will both delete the file locally, and in the index.
+Se vuoi rimuovere un file nel prossimo commit, puoi usare `git rm`! Questo eliminera' il file sia in locale sia nell'index.
 
-If a file is modified, you'll need to reset these changes first/reset the files.
+Se un file e' modificato, dovrai prima resettare queste modifiche o i file.
 
 [setup]
 

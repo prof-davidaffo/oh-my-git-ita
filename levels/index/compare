@@ -1,15 +1,15 @@
-title = Step by step
+title = Passo per passo
 cards = checkout commit-auto
 
 [description]
 
-Welcome to today's lesson! We're going to learn how to make commits with more precision!
+Benvenuto alla lezione di oggi! Impareremo a fare commit con piu' precisione!
 
-Have a look at these two timelines. They have exactly the same outcome. But one of them makes it much easier to figure out what happened.
+Dai un'occhiata a queste due linee temporali. Hanno esattamente lo stesso risultato, ma una rende molto piu' facile capire cosa e' successo.
 
 [win]
 
-# Right! Having each change in its own commit makes it easier to understand what's going on! Let's learn how to do that!
+# Giusto! Avere ogni modifica nel suo commit rende piu' facile capire cosa sta succedendo! Impariamo come farlo!
 git branch --show-current | grep step-by-step
 
 [setup]

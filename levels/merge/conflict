@@ -1,15 +1,15 @@
-title = Contradictions
+title = Contraddizioni
 cards = checkout commit-auto merge reset-hard
 
 [description]
 
-Sometimes, timelines will contradict each other.
+A volte le linee temporali si contraddicono.
 
-For example, in this case, one of our clients wants these timelines merged, but they ate different things for breakfast in both timelines.
+Per esempio, in questo caso uno dei nostri clienti vuole unire queste linee temporali, ma nelle due linee hanno fatto colazioni diverse.
 
-Try to merge them together! You'll notice that there will be a conflict! The time machine will leave it up to you how to proceed: you can edit the problematic item, it will show you the conflicting sections. You can keep either of the two versions - or create a combination of them! Remove the >>>, <<<, and === markers, and make a new commit to finalize the merge!
+Prova a unirle! Noterai che ci sara' un conflitto! La macchina del tempo ti lascia decidere come procedere: puoi modificare l'elemento problematico e vedrai le sezioni in conflitto. Puoi tenere una delle due versioni, oppure creare una combinazione! Rimuovi i marcatori >>>, <<< e === e fai un nuovo commit per finalizzare il merge!
 
-Let your finalized timeline be the "main" one.
+Fai in modo che la linea temporale finale sia la "main".
 
 [setup]
 
@@ -44,4 +44,4 @@ git rev-parse main^ && test "$(git rev-parse main^1^^)" = "$(git rev-parse main^
 
 [congrats]
 
-Yum, that sounds like a good breakfast!
+Mmm, sembra una buona colazione!

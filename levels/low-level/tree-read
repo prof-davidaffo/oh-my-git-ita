@@ -1,12 +1,12 @@
 [description]
 
-As soon as you have some tree objects, you can always read them and set the index exactly to their content! Unsurprisingly, the command is called
+Appena hai alcuni oggetti tree, puoi sempre leggerli e impostare l'index esattamente al loro contenuto! Non sorprende che il comando si chiami
 
     git read-tree <tree>
 
-For <tree>, you can provide the hash of any tree object - you can right-click one to insert its hash into the terminal!
+Per <tree> puoi fornire l'hash di qualsiasi oggetto tree: puoi cliccarne uno con il tasto destro per inserirne l'hash nel terminale!
 
-Try reading some of the trees in this repository into the index!
+Prova a leggere alcuni tree di questo repository nell'index!
 
 [setup]
 

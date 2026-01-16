@@ -1,17 +1,17 @@
-title = Moving through time
+title = Muoversi nel tempo
 cards = checkout commit-auto
 
 [description]
 
-The yellow boxes are frozen points in time, we call them "commits"! You can travel between them using the "checkout" card! (Try it!)
+Le caselle gialle sono punti nel tempo congelati, li chiamiamo "commit"! Puoi viaggiare tra loro usando la carta "checkout"! (Provala!)
 
-Can you find out what happened here? Then, while on the last commit, edit the files to fix the problem, and make a new commit!
+Riesci a capire cosa e' successo qui? Poi, mentre sei sull'ultimo commit, modifica i file per risolvere il problema e fai un nuovo commit!
 
 [cli]
 
-To checkout a specific commit, type `git checkout`, then a space, and then right click on the commit you want!
+Per fare checkout di un commit specifico, digita `git checkout`, poi uno spazio, e poi clicca con il tasto destro sul commit che vuoi!
 
-This will insert the commit's unique identifier!
+Questo inserira' l'identificatore univoco del commit!
 
 [setup]
 
@@ -40,4 +40,4 @@ git branch -df main
 
 [congrats]
 
-Wonderful! Now that you're getting familiar with the time machine, let's look at some more complicated situations...
+Meraviglioso! Ora che ti stai abituando alla macchina del tempo, vediamo situazioni piu' complicate...

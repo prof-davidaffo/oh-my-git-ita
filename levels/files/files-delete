@@ -1,16 +1,16 @@
-title = Unexpected Roommates
+title = Coinquilini inaspettati
 cards = file-delete
 
 [description]
 
-The first day at Time Travel School comes to an end and you receive the key to your room.
-Full of excitement you open the door just to find... spider webs! Spider webs everywhere!
+Il primo giorno alla scuola di viaggio nel tempo finisce e ricevi la chiave della tua stanza.
+Pieno di entusiasmo apri la porta e trovi... ragnatele! Ragnatele ovunque!
 
-Remove all the spider webs you can find with the remove card!
+Rimuovi tutte le ragnatele che trovi con la carta remove!
 
 [cli]
 
-On the command line, you can easily delete all files ending in -web using this command:
+Nella riga di comando puoi eliminare facilmente tutti i file che finiscono per -web usando questo comando:
 
     rm *web
 
@@ -33,4 +33,4 @@ ls | grep bed
 
 [congrats]
 
-Your room looks now very tidy and cozy! Time to unpack your stuff!
+La tua stanza ora sembra molto ordinata e accogliente! E' ora di disfare le valigie!

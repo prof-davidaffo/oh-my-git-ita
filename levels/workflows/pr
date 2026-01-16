@@ -1,9 +1,9 @@
-title = Cloning a repo
+title = Clonare un repo
 cards = clone commit-auto reset-hard checkout file-new branch
 
 [description]
 
-Your friend has a problem! Clone the repo located in `../friend`, create a branch called "solution", and fix the problem in this branch. When you're ready, make a "Pull Request" by using `git tag pr`.
+Il tuo amico ha un problema! Clona il repo che si trova in `../friend`, crea un branch chiamato "solution" e risolvi il problema in quel branch. Quando sei pronto, fai una "Pull Request" usando `git tag pr`.
 
 
 [setup]
@@ -19,7 +19,7 @@ git commit -m "Initial commit"
 [actions friend]
 
 git ls-remote yours | grep pr && git fetch yours && git merge yours/solution
-git show main:file | grep 5 && hint "Thanks!"
+git show main:file | grep 5 && hint "Grazie!"
 
 [win friend]
 

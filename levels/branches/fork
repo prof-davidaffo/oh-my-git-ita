@@ -1,21 +1,21 @@
-title = Make parallel commits
+title = Crea commit paralleli
 cards = checkout commit-auto
 
 [description]
 
-Did you know that creating parallel timelines is perfectly legal and safe? It's true!
+Sapevi che creare linee temporali parallele e' perfettamente legale e sicuro? E' vero!
 
-Can you find out when things went wrong in this zoo? Then, go back to the last good commit and create a parallel universe where everyone is happy!
+Riesci a capire quando le cose sono andate storte in questo zoo? Poi torna all'ultimo commit buono e crea un universo parallelo dove tutti sono felici!
 
 [cli]
 
-The blue animal represents a concept known as the "HEAD pointer" in Git: It shows you which commit is the current one.
+L'animale blu rappresenta un concetto noto come "puntatore HEAD" in Git: ti mostra quale commit e' quello corrente.
 
-Here's a cool trick to go to the previous commit: 
+Ecco un trucco utile per andare al commit precedente:
 
     git checkout HEAD^
 
-You can also go back two commits by typing, for example: 
+Puoi anche tornare indietro di due commit digitando, per esempio:
 
     git checkout HEAD~2
 
@@ -58,8 +58,8 @@ git show HEAD:cage/lion | grep -v "very hungry"
 
 [congrats]
 
-Whew, good job! This seems like a *much* better outcome.
+Uff, buon lavoro! Questo sembra un risultato *molto* migliore.
 
-Feel free to add more parallel timelines, or make them longer.
+Sentiti libero di aggiungere altre linee temporali parallele, o di renderle piu' lunghe.
 
-If you're ready, our next mission is already waiting...
+Se sei pronto, la nostra prossima missione ti sta gia' aspettando...

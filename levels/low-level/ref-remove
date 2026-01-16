@@ -1,10 +1,10 @@
 [description]
 
-And finally, to delete a ref, use
+E infine, per eliminare un ref, usa
 
     git update-ref -d refs/<refname>
 
-Delete all refs! :P (Well, except for HEAD. HEAD is special.)
+Elimina tutti i ref! :P (Beh, tranne HEAD. HEAD e' speciale.)
 
 [setup]
 

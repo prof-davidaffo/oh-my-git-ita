@@ -1,11 +1,11 @@
-title = One step after another
+title = Un passo dopo l'altro
 cards = checkout commit reset-hard add
 
 [description]
 
-Sometimes, you might want to record the order in which things changed, instead of making a single commit.
+A volte potresti voler registrare l'ordine in cui le cose sono cambiate, invece di fare un unico commit.
 
-What happened here? Make two commits from the changes (using the "add" card), in an order that makes sense!
+Cosa e' successo qui? Fai due commit dalle modifiche (usando la carta "add"), in un ordine che abbia senso!
 
 [setup]
 

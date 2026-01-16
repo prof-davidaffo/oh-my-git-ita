@@ -1,13 +1,13 @@
-title = Rename a file in the next commit
+title = Rinominare un file nel prossimo commit
 cards = add reset-file checkout-file mv commit
 
 [description]
 
-Other times, you might want to rename a file in the next commit. Use
+Altre volte potresti voler rinominare un file nel prossimo commit. Usa
 
     git mv [file] [new name]
 
-for that. The effect is very similar as if you had created a copy with a new name, and removed the old version.
+per farlo. L'effetto e' molto simile a quello di creare una copia con un nuovo nome e rimuovere la vecchia versione.
 
 [setup]
 

@@ -1,17 +1,17 @@
-title = Your first commit
+title = Il tuo primo commit
 cards = commit-auto
 
 [description]
 
-You can use your time machine to make snapshots of objects around you! Here, let's practice this!
+Puoi usare la tua macchina del tempo per fare istantanee degli oggetti intorno a te! Qui ci esercitiamo!
 
-(Your teacher pours some water into a glass.)
+(Il tuo insegnante versa un po' d'acqua in un bicchiere.)
 
 [cli]
 
-Again, instead of using the card, you can also type the commands which are printed on it into the black terminal below!
+Di nuovo, invece di usare la carta, puoi anche digitare i comandi stampati su di essa nel terminale nero qui sotto!
 
-This is totally optional! But this will be a super useful skill in the real world - and it will give you a sparkling golden badge! :)
+Questo e' del tutto opzionale! Ma e' una abilita' utilissima nel mondo reale - e ti dara' un distintivo dorato scintillante! :)
 
 [setup]
 
@@ -30,4 +30,4 @@ git rev-parse HEAD^ && ! test "$(git show main:glass)" = "The glass is full of w
 
 [congrats]
 
-Nice! You can try making some additional commits. When you feel comfortable, click on "Next Level".
+Bene! Puoi provare a fare qualche commit in piu'. Quando ti senti a tuo agio, clicca su "Prossimo livello".

@@ -1,9 +1,9 @@
-title = Adding changes step by step
+title = Aggiungere modifiche passo per passo
 cards = add reset-file commit
 
 [description]
 
-The index is really useful, because it allows us to be precise about which changes we want to include in each commit!
+L'index e' davvero utile, perche' ci permette di essere precisi su quali modifiche vogliamo includere in ogni commit!
 
 [setup]
 

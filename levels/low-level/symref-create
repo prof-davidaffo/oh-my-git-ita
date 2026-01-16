@@ -1,12 +1,12 @@
 [description]
 
-Instead of pointing directly to objects, refs can also point to other refs!
+Invece di puntare direttamente agli oggetti, i ref possono puntare anche ad altri ref!
 
-When that happens, they are called "symbolic refs". You can create or update a symbolic ref using
+Quando succede, si chiamano "ref simbolici". Puoi creare o aggiornare un ref simbolico usando
 
     git symbolic-ref <name> <ref>
 
-Create a symbolic ref called "refs/rainbow"!
+Crea un ref simbolico chiamato "refs/rainbow"!
 
 [setup]
 

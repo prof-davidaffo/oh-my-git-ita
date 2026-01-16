@@ -1,9 +1,9 @@
-title = Split a commit!
+title = Dividere un commit!
 cards = checkout commit reset-hard reset add rebase-interactive rebase-continue show
 
 [description]
 
-Here, both changes happened in one commit! Split them to be in two commits instead.
+Qui entrambe le modifiche sono finite in un solo commit! Dividile in due commit.
 
 [setup]
 

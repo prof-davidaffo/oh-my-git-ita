@@ -55,7 +55,7 @@ func draw(ids):
 	arrange_cards()
 	
 	if ids.size() > 0:
-		game.notify("These are your cards! Drag them to highlighted areas to play them!", self, "cards")
+		game.notify("Queste sono le tue carte! Trascinale sulle aree evidenziate per giocarle!", self, "cards")
 	
 func arrange_cards():
 	var t = Timer.new()

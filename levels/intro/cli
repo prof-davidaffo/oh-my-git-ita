@@ -1,15 +1,15 @@
-title = The command line
+title = La riga di comando
 cards = 
 
 [description]
 
-These playing cards are designed to be easy to use and to remember! We'd suggest sticking to them if you don't have a lot of experience with Git!
+Queste carte sono progettate per essere facili da usare e da ricordare! Ti consigliamo di restare su queste se non hai molta esperienza con Git!
 
 [cli]
 
-But there's another way to interact with Git:
+Ma c'e' un altro modo per interagire con Git:
 
-Try typing `git init` into the black terminal below, and pressing the enter key!
+Prova a digitare `git init` nel terminale nero qui sotto e premi Invio!
 
 [setup]
 
@@ -22,6 +22,6 @@ test -d .git
 
 [congrats]
 
-Cool! Instead of using the playing cards, you can also do everything via the command line!
+Ottimo! Invece di usare le carte, puoi anche fare tutto dalla riga di comando!
 
-The command line is pretty powerful! Often, you can use it to solve tasks faster compared to using a graphical interface.
+La riga di comando e' piuttosto potente! Spesso puoi usarla per risolvere i compiti piu' velocemente rispetto a un'interfaccia grafica.

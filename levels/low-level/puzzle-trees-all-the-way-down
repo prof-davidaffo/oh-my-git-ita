@@ -1,8 +1,8 @@
 [description]
 
-Construct a chain of three trees, which don't point to anything else.
+Costruisci una catena di tre tree che non puntano a nient'altro.
 
-This is hard! The `git mktree` command might be useful.
+E' difficile! Il comando `git mktree` potrebbe essere utile.
 
 [setup]
 

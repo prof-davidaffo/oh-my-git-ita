@@ -1,19 +1,19 @@
-title = Adding a remote
+title = Aggiungere un remote
 cards = checkout
 
 [description]
 
-Let's work together with others! Your friend has their own repo at the URL `../friend` - you can add it using
+Lavoriamo insieme ad altri! Il tuo amico ha il suo repo all'URL `../friend`: puoi aggiungerlo usando
 
     git remote add [name] [URL]
 
-where `[name]` is an arbitrary, short name you pick for the remote.
+dove `[name]` e' un nome breve e arbitrario che scegli per il remote.
 
-When you've done that, you can get all commits from that remote using
+Quando lo hai fatto, puoi ottenere tutti i commit da quel remote usando
 
     git pull friend
 
-There's a letter for you!
+C'e' una lettera per te!
 
 [setup]
 

@@ -1,24 +1,24 @@
 [description]
 
-At its core, Git is very simple. It stores "objects", which are basically files identified by an "identifier" (short: ID).
+Alla base, Git e' molto semplice. Memorizza "oggetti", che sono fondamentalmente file identificati da un "identificatore" (in breve: ID).
 
-There are four types of objects: blobs, trees, commits, and tags. The simplest type is a "blob", which is just a piece of text.
+Ci sono quattro tipi di oggetti: blob, tree, commit e tag. Il tipo piu' semplice e' un "blob", che e' solo un pezzo di testo.
 
-Let's create some blobs! To do that, create a file with the desired content, and then use
+Creiamo alcuni blob! Per farlo, crea un file con il contenuto desiderato e poi usa
 
     git hash-object -w <file>
 
-The flag -w means "write", and tells Git to actually write the new blob to the disk.
+Il flag -w significa "write" e dice a Git di scrivere davvero il nuovo blob su disco.
 
-Create three new blobs!
+Crea tre nuovi blob!
 
 [congrats]
 
-Tip: You can also use a command like this to create a blob in a single line:
+Suggerimento: puoi anche usare un comando come questo per creare un blob in una sola riga:
 
     echo "awesome content" | git hash-object -w --stdin
 
-Did you already notice that you can drag and drop all objects? :)
+Hai gia' notato che puoi trascinare tutti gli oggetti? :)
 
 [setup]
 

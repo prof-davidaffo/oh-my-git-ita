@@ -1,34 +1,34 @@
-title = Living dangerously
+title = Vivere pericolosamente
 cards =
 
 [description]
 
-So you have decided to apply for time travel school, to learn how to use this time machine called "Git"!
+Hai deciso di candidarti alla scuola di viaggio nel tempo, per imparare a usare questa macchina del tempo chiamata "Git"!
 
-How exciting!
+Che emozione!
 
-You're almost done with the paperwork! You just need to fill in one more reason why you want to learn Git.
+Hai quasi finito con i moduli! Devi solo aggiungere un altro motivo per cui vuoi imparare Git.
 
 [congrats]
 
-Suddenly, your cat jumps on the table, snatches away the form, and runs away! Oh no. All your hard work, gone!
+All'improvviso, il tuo gatto salta sul tavolo, ruba il modulo e scappa! Oh no. Tutto il tuo lavoro, sparito!
 
-You clearly need a better solution.
+Ti serve chiaramente una soluzione migliore.
 
-(Click "Next Level" as soon as you're ready!)
+(Clicca "Prossimo livello" appena sei pronto!)
 
 [setup]
 
 rm -rf .git
 
-echo "~ Why I want to learn Git ~
+echo "~ Perche' voglio imparare Git ~
 
-- So that I can undo mistakes
-- To track my projects over time" >> form.txt
+- Per poter annullare gli errori
+- Per tenere traccia dei miei progetti nel tempo" >> form.txt
 
 [actions]
 
-test "$(cat form.txt | wc -l )" -ge 5 && echo "(Has been stolen by your cat.)
+test "$(cat form.txt | wc -l )" -ge 5 && echo "(E' stato rubato dal tuo gatto.)
 
 
 

@@ -21,7 +21,7 @@ func load(path):
 		var config = helpers.parse(path)
 		
 		title = config.get("title", slug)
-		description = config.get("description", "(no description)")
+		description = config.get("description", "(nessuna descrizione)")
 		
 		# Surround all lines indented with four spaces with [code] tags.
 		var monospace_regex = RegEx.new()
@@ -42,7 +42,7 @@ func load(path):
 		if cli_hints != "":
 			description[0] = description[0] + "\n\n[color=#787878]"+cli_hints+"[/color]"
 		
-		congrats = config.get("congrats", "Good job, you solved the level!\n\nFeel free to try a few more things or click 'Next level'.")
+		congrats = config.get("congrats", "Ottimo lavoro, hai risolto il livello!\n\nSentiti libero di provare altre cose o cliccare 'Prossimo livello'.")
 		cards = Array(config.get("cards", "").split(" "))
 		if cards == [""]:
 			cards = []
@@ -78,7 +78,7 @@ func load(path):
 			else:
 				repo = "yours"
 			
-			var desc = "Complete the goal of this level"
+			var desc = "Completa l'obiettivo di questo livello"
 			for line in Array(config[k].split("\n")):
 				if line.length() > 0 and line[0] == "#":
 					desc = line.substr(1).strip_edges(true, true)

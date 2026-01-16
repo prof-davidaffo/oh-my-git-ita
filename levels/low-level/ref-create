@@ -1,14 +1,14 @@
 [description]
 
-Let's take a look at "refs" (short for "references")! Refs are not objects, but rather very simple *pointers* to objects! They can help you keep track of what's where.
+Diamo un'occhiata ai "ref" (abbreviazione di "references")! I ref non sono oggetti, ma semplici *puntatori* a oggetti! Possono aiutarti a tenere traccia di dove si trova cosa.
 
-You can create or update a ref with
+Puoi creare o aggiornare un ref con
 
     git update-ref refs/<refname> <newvalue>
 
-Make sure to always start a ref's name with "refs/"! That's a convention that helps Git find all refs you create. If you forget the "refs/", you will not see the ref.
+Assicurati di iniziare sempre il nome di un ref con "refs/"! E' una convenzione che aiuta Git a trovare tutti i ref che crei. Se ti dimentichi "refs/", non vedrai il ref.
 
-Create refs that point to all objects in this repository!
+Crea ref che puntano a tutti gli oggetti in questo repository!
 
 [setup]
 

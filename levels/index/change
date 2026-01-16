@@ -1,17 +1,17 @@
-title = Update files in the index
+title = Aggiornare i file nell'index
 cards = add commit
 
 [description]
 
-When we change files, the index won't change on its own. We have to use `git add` to update the index to the changed version of the file.
+Quando cambiamo i file, l'index non si aggiorna da solo. Dobbiamo usare `git add` per aggiornare l'index alla versione modificata del file.
 
-Let's try that!
+Proviamo!
 
-The icons in the file browser show you when the actual file (white) and the version in the index (blue) are different, and when they are the same!
+Le icone nel file browser ti mostrano quando il file reale (bianco) e la versione nell'index (blu) sono diversi e quando sono uguali!
 
 [win]
 
-Good! The index is sometimes also called the "staging area" - it contains exactly what ends up in the next commit when you use `git commit`!
+Bene! L'index a volte e' chiamato anche "staging area": contiene esattamente cio' che finira' nel prossimo commit quando usi `git commit`!
 
 [setup]
 

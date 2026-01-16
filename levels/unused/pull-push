@@ -1,15 +1,15 @@
-title = Helping each other
+title = Aiutarsi a vicenda
 cards = checkout commit-auto reset-hard pull push
 
 [description]
 
-The events and timelines you see are always only what your own time machine knows about!
+Gli eventi e le linee temporali che vedi sono sempre e solo quelle che la tua macchina del tempo conosce!
 
-Of course, time agents don't have to work alone! Here, your sidekick has already prepared a merge for you! You can use the "pull" card to transfer it to your own time machine.
+Ovviamente, gli agenti del tempo non devono lavorare da soli! Qui il tuo compagno ha gia' preparato un merge per te! Puoi usare la carta "pull" per trasferirlo nella tua macchina del tempo.
 
-Then, add another event on top (what does Sam have for dinner?), and `push` the result, to transfer it back to your sidekick!
+Poi aggiungi un altro evento sopra (cosa mangia Sam a cena?) e `push`a il risultato per trasferirlo di nuovo al tuo compagno!
 
-You can only ever manipulate things in your own time machine (the one on the bottom).
+Puoi manipolare solo le cose nella tua macchina del tempo (quella in basso).
 
 [setup yours]
 
@@ -48,4 +48,4 @@ git rev-parse main^^ && test "$(git rev-parse main^^1^)" = "$(git rev-parse main
 
 [congrats]
 
-In reality, in many cases, a lot of time agents work together to build a really good future together! :)
+Nella realta', in molti casi, tanti agenti del tempo lavorano insieme per costruire un futuro davvero buono! :)

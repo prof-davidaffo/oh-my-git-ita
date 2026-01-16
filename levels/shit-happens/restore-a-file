@@ -1,11 +1,11 @@
-title = Restore a deleted file
+title = Ripristinare un file eliminato
 cards = checkout
 
 [description]
 
-Oops - you deleted the "essay" file, which you worked on all night!
+Ops, hai eliminato il file "essay", su cui hai lavorato tutta la notte!
 
-Luckily, Git is here to help! You can use `git checkout` to restore the file!
+Per fortuna, Git e' qui per aiutarti! Puoi usare `git checkout` per ripristinare il file!
 
 [setup]
 

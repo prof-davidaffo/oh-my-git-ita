@@ -1,11 +1,11 @@
-title = Sandbox with a remote
+title = Sandbox con un remote
 cards = checkout commit-auto pull fetch push
 
 [description]
 
-Here's a sandbox with a remote! Try pulling, fetching, or pushing!
+Ecco un sandbox con un remote! Prova a fare pull, fetch o push!
 
-How can you push tags and branches on a remote? How can you delete them again?
+Come puoi pushare tag e branch su un remote? E come puoi eliminarli di nuovo?
 
 [setup yours]
 

@@ -56,7 +56,7 @@ func reload():
 			level_list.add_child(hb)
 			
 			if badge.active:
-				game.notify("You get a golden badge for each level you solve without using the playing cards! Can you solve them all using the command line?", badge, "cli-badge")
+				game.notify("Ottieni un distintivo dorato per ogni livello che risolvi senza usare le carte! Riesci a risolverli tutti usando la riga di comando?", badge, "cli-badge")
 			level_id += 1
 			
 		chapter_id += 1
