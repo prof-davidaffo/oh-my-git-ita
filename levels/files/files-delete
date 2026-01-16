@@ -16,20 +16,20 @@ Nella riga di comando puoi eliminare facilmente tutti i file che finiscono per -
 
 [setup]
 
-echo Una piccola ragnatela e' vicino alla finestra. > tiny_web
-echo Una grande ragnatela pende sopra il letto. > big_web
-echo Un letto accogliente. > bed
-echo Una ragnatela molto spessa e' proprio accanto alla porta. > thick_web
+echo Una piccola ragnatela e' vicino alla finestra. > ragnatela_piccola
+echo Una grande ragnatela pende sopra il letto. > ragnatela_grande
+echo Un letto accogliente. > letto
+echo Una ragnatela molto spessa e' proprio accanto alla porta. > ragnatela_spessa
 
 [win]
 
 # Rimuovi tutte le ragnatele.
-! ls | grep thick_web &&
-! ls | grep big_web &&
-! ls | grep tiny_web
+! ls | grep ragnatela_spessa &&
+! ls | grep ragnatela_grande &&
+! ls | grep ragnatela_piccola
 
 # Ma assicurati di tenere il letto!
-ls | grep bed
+ls | grep letto
 
 [congrats]
 

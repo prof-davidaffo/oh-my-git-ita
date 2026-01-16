@@ -9,10 +9,10 @@ Aggiungilo al file .gitignore e prova a usare `git add .`!
 [setup]
 
 touch .gitignore
-echo important > important
-git add important
+echo importante > importante
+git add importante
 git commit -m "Initial commit"
 
 [actions]
 
-echo "$RANDOM" > chicken
+echo "$RANDOM" > pollo

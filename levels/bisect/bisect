@@ -15,19 +15,19 @@ Dopo aver trovato l'ultimo commit buono, resetta il branch main a quel punto. Co
 
 [setup]
 
-echo "Hai ancora la tua chiave." > you
+echo "Hai ancora la tua chiave." > io
 
 for i in {1..30}; do
     if test $i -eq 12; then
-        echo "La tua tasca e' vuota." > you
-        echo "E' per terra." > key
+        echo "La tua tasca e' vuota." > io
+        echo "E' per terra." > chiave
     fi
     if test $i -eq 13; then
-        echo "Tiene una chiave nel becco." > bird
-        rm key
+        echo "Tiene una chiave nel becco." > uccello
+        rm chiave
     fi
     if test $i -eq 14; then
-        rm bird
+        rm uccello
     fi
     git add .
     git commit --allow-empty -m "$i"

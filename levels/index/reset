@@ -13,25 +13,25 @@ Se hai gia' aggiornato l'index a un file modificato, ma vuoi resettarlo, puoi us
 
 [setup]
 
-echo "Sta bruciando!" > red_candle
-echo "Sta bruciando!" > green_candle
-echo "Sta bruciando!" > blue_candle
+echo "Sta bruciando!" > candela_rossa
+echo "Sta bruciando!" > candela_verde
+echo "Sta bruciando!" > candela_blu
 git add .
 git commit -m "The beginning"
 
-echo "Si e' spenta." > red_candle
-echo "Si e' spenta." > green_candle
-echo "Si e' spenta." > blue_candle
+echo "Si e' spenta." > candela_rossa
+echo "Si e' spenta." > candela_verde
+echo "Si e' spenta." > candela_blu
 git add .
 
 [win]
 
 # Resetta le modifiche nelle candele verde e blu!
-git show :green_candle | grep "Sta bruciando" &&
-git show :blue_candle | grep "Sta bruciando" &&
-git show :red_candle | grep -v "Sta bruciando"
+git show :candela_verde | grep "Sta bruciando" &&
+git show :candela_blu | grep "Sta bruciando" &&
+git show :candela_rossa | grep -v "Sta bruciando"
 
 # E fai un commit!
-git show main:green_candle | grep "Sta bruciando" &&
-git show main:blue_candle | grep "Sta bruciando" &&
-git show main:red_candle | grep -v "Sta bruciando"
+git show main:candela_verde | grep "Sta bruciando" &&
+git show main:candela_blu | grep "Sta bruciando" &&
+git show main:candela_rossa | grep -v "Sta bruciando"

@@ -21,7 +21,7 @@ git remote remove friend
 
 [setup friend]
 
-echo "Sono davvero fedele alla nostra amicizia! <3" > love_letter
+echo "Sono davvero fedele alla nostra amicizia! <3" > lettera_amore
 git add .
 git commit -m "Write a letter"
 
@@ -30,4 +30,4 @@ git commit -m "Write a letter"
 # Aggiungi un remote che punti a ../friend.
 git remote -v | grep '../friend'
 # Fai pull dal remote.
-git show HEAD:love_letter | grep committed
+git show HEAD:lettera_amore | grep fedele

@@ -14,16 +14,16 @@ Non modifica in alcun modo la working directory, il che significa che dopo puoi 
 
 [setup]
 
-echo "1 2 3 4" > numbers
+echo "1 2 3 4" > numeri
 git add .
 git commit -m "Commit iniziale"
-echo "1 2 3 4 5 6 7 8 9 11" > numbers
+echo "1 2 3 4 5 6 7 8 9 11" > numeri
 git commit -am "Altri numeeeee"
 
 [win]
 
-# Nell'ultimo commit di main, il file numbers contiene i numeri da 1 a 10.
-test "$(git show main:numbers)" = "1 2 3 4 5 6 7 8 9 10"
+# Nell'ultimo commit di main, il file numeri contiene i numeri da 1 a 10.
+test "$(git show main:numeri)" = "1 2 3 4 5 6 7 8 9 10"
 # Il messaggio di quel commit e' "Altri numeri".
 git log -1 --oneline | grep "Altri numeri"
 # Il commit con il refuso non fa piu' parte del branch main.

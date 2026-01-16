@@ -23,11 +23,11 @@ Aggiungi un tag chiamato "v2" all'ultimo commit e pushalo sul remote. Inoltre fa
 git checkout main
 
 git checkout main
-echo "condivisione dello spazzolino" > project-ideas
+echo "condivisione dello spazzolino" > idee_progetto
 git add .
 git commit -m "First idea"
 
-echo "Il mio telefono e' capovolto? App" >> project-ideas
+echo "Il mio telefono e' capovolto? App" >> idee_progetto
 git commit -am "Another idea"
 
 

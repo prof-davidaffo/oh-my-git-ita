@@ -17,17 +17,17 @@ suggerimento3
 
 [setup]
 
-echo "Torta di mele:" > recipe
+echo "Torta di mele:" > ricetta
 
 git add .
 git commit -m "creating a recipe"
 
-echo "- 4 mele" >> recipe
+echo "- 4 mele" >> ricetta
 
 git add .
 git commit -m "Adding ingredients"
 
-echo "- 500g di farina" >> recipe
+echo "- 500g di farina" >> ricetta
 
 git checkout main
 

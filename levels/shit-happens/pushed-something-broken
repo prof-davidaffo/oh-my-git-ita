@@ -13,7 +13,7 @@ echo "va tutto bene
 
 ?
 
-?" > text
+?" > testo
 git add .
 git commit -m fine
 echo "va tutto bene
@@ -22,7 +22,7 @@ anche questo va bene
 
 ?
 
-?" > text
+?" > testo
 git commit -am "also fine"
 echo "va tutto bene
 
@@ -30,7 +30,7 @@ anche questo va bene
 
 questa cosa e' molto brutta
 
-?" > text
+?" > testo
 git commit -am "very bad"
 echo "va tutto bene
 
@@ -38,7 +38,7 @@ anche questo va bene
 
 questa cosa e' molto brutta
 
-va di nuovo bene" > text
+va di nuovo bene" > testo
 git commit -am "fine again"
 
 git push team main
@@ -49,6 +49,6 @@ git branch -u team/main main
 [win team]
 
 # Il branch main del team non contiene piu' la cosa brutta.
-! { git show main:text | grep -q "molto brutta"; }
+! { git show main:testo | grep -q "molto brutta"; }
 # E la cronologia non e' stata modificata.
-git show main^:text | grep -q "molto brutta"
+git show main^:testo | grep -q "molto brutta"

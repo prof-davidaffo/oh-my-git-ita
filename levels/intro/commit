@@ -15,7 +15,7 @@ Questo e' del tutto opzionale! Ma e' una abilita' utilissima nel mondo reale - e
 
 [setup]
 
-echo "Il bicchiere e' pieno d'acqua." > glass
+echo "Il bicchiere e' pieno d'acqua." > bicchiere
 
 [win]
 
@@ -23,10 +23,10 @@ echo "Il bicchiere e' pieno d'acqua." > glass
 git rev-parse HEAD
 
 # Cambia il contenuto del bicchiere!
-! test "$(cat glass)" = "Il bicchiere e' pieno d'acqua."
+! test "$(cat bicchiere)" = "Il bicchiere e' pieno d'acqua."
 
 # E fai un secondo commit!
-git rev-parse HEAD^ && ! test "$(git show main:glass)" = "Il bicchiere e' pieno d'acqua."
+git rev-parse HEAD^ && ! test "$(git show main:bicchiere)" = "Il bicchiere e' pieno d'acqua."
 
 [congrats]
 

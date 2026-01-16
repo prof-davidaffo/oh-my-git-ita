@@ -13,15 +13,15 @@ I branch rendono anche molto facile viaggiare tra posti diversi usando la riga d
 
 [setup]
 
-echo "Impacchetti il regalo di compleanno e prendi il biglietto del concerto." > you
+echo "Impacchetti il regalo di compleanno e prendi il biglietto del concerto." > io
 git add .
 git commit -m "Evening preparations"
-echo "Vai alla festa di compleanno!" >> you
+echo "Vai alla festa di compleanno!" >> io
 git add .
 git commit -m "Go to the birthday"
 
 git checkout HEAD~1
-echo "Vai al concerto!" > you
+echo "Vai al concerto!" > io
 git add .
 git commit -m "Go to the concert"
 

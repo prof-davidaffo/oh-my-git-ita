@@ -24,19 +24,19 @@ rm -rf .git
 echo "~ Perche' voglio imparare Git ~
 
 - Per poter annullare gli errori
-- Per tenere traccia dei miei progetti nel tempo" >> form.txt
+- Per tenere traccia dei miei progetti nel tempo" >> modulo.txt
 
 [actions]
 
-test "$(cat form.txt | wc -l )" -ge 5 && echo "(E' stato rubato dal tuo gatto.)
+test "$(cat modulo.txt | wc -l )" -ge 5 && echo "(E' stato rubato dal tuo gatto.)
 
 
 
 
 
-" > form.txt
+" > modulo.txt
 
 [win]
 
-# Aggiungi un'altra riga a form.txt!
-test "$(cat form.txt | wc -l )" -ge 5
+# Aggiungi un'altra riga a modulo.txt!
+test "$(cat modulo.txt | wc -l )" -ge 5

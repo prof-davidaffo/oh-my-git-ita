@@ -9,24 +9,24 @@ Comandi utili:
 
 [setup]
 
-echo ciao > foo
-BLOB=$(git hash-object -w foo)
-echo mondo > bar
+echo ciao > ciao
+BLOB=$(git hash-object -w ciao)
+echo mondo > mondo
 git add .
 git commit -m "Initial commit"
-echo bla bla >> bar
+echo bla bla >> mondo
 git commit -a -m "Second commit"
 git update-ref refs/important HEAD
 git update-ref refs/interesting "$BLOB"
 
 [setup goal]
 
-echo ciao > foo
-BLOB=$(git hash-object -w foo)
-echo mondo > bar
+echo ciao > ciao
+BLOB=$(git hash-object -w ciao)
+echo mondo > mondo
 git add .
 git commit -m "Initial commit"
-echo bla bla >> bar
+echo bla bla >> mondo
 git commit -a -m "Second commit"
 git update-ref refs/important HEAD
 git update-ref refs/interesting "$BLOB"

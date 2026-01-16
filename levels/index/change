@@ -15,17 +15,17 @@ Bene! L'index a volte e' chiamato anche "staging area": contiene esattamente cio
 
 [setup]
 
-echo "La candela brucia con una fiamma blu." > candle
+echo "La candela brucia con una fiamma blu." > candela
 git add .
 git commit -m "The beginning"
 
 [win]
 
 # Fai una modifica alla candela.
-test "$(git diff --name-only)" = "candle" || file -f .git/candle-changed && touch .git/candle-changed
+test "$(git diff --name-only)" = "candela" || file -f .git/candle-changed && touch .git/candle-changed
 
 # Aggiungi la candela.
-test "$(git diff --cached --name-only)" = "candle" || file -f .git/candle-added && touch .git/candle-added
+test "$(git diff --cached --name-only)" = "candela" || file -f .git/candle-added && touch .git/candle-added
 
 # Fai un commit.
-test "$(git diff --name-only HEAD HEAD^)" = "candle"
+test "$(git diff --name-only HEAD HEAD^)" = "candela"

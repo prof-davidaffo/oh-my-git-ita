@@ -14,19 +14,19 @@ git branch --show-current | grep step-by-step
 
 [setup]
 
-echo "Una piccola ma pesante sfera di vetro." > ball
-echo "Un libro sottile in piedi." > book
-echo "Una candela che brucia con una fiamma blu." > candle
-echo "Un rilevatore di fumo. E' assolutamente silenzioso." > smoke_detector
+echo "Una piccola ma pesante sfera di vetro." > palla
+echo "Un libro sottile in piedi." > libro
+echo "Una candela che brucia con una fiamma blu." > candela
+echo "Un rilevatore di fumo. E' assolutamente silenzioso." > rilevatore_fumo
 
 git add .
 git commit -m "The beginning"
 
 git branch -M all-at-once
 
-echo "La palla ora tocca il libro." > ball
-echo "Il libro e' caduto." > book
-echo "La candela si e' spenta." > candle
+echo "La palla ora tocca il libro." > palla
+echo "Il libro e' caduto." > libro
+echo "La candela si e' spenta." > candela
 
 git commit -am "The end"
 
@@ -34,13 +34,13 @@ git checkout HEAD^
 
 git checkout -b step-by-step
 
-echo "La palla ora tocca il libro." > ball
+echo "La palla ora tocca il libro." > palla
 git commit -am "The ball rolls towards the book"
 
-echo "Il libro e' caduto." > book
+echo "Il libro e' caduto." > libro
 git commit -am "The book falls over"
 
-echo "La candela si e' spenta." > candle
+echo "La candela si e' spenta." > candela
 git commit -am "The book blows out the candle"
 
 git checkout HEAD~3
@@ -48,4 +48,4 @@ git checkout HEAD~3
 [win]
 
 # Scegli la linea temporale piu' chiara e fai suonare l'allarme!
-git show step-by-step:smoke_detector | tail -n 1 | grep -v "assolutamente silenzioso"
+git show step-by-step:rilevatore_fumo | tail -n 1 | grep -v "assolutamente silenzioso"

@@ -16,12 +16,12 @@ echo "~ Perche' vuoi imparare a usare le macchine del tempo? ~
 [ ] Per assicurarmi che il mio gatto non mangi i miei compiti.
 [ ] Cosi' non devo tenere copie di tutti i miei temi.
 [ ] Per collaborare con altri studenti di viaggio nel tempo.
-[ ] Altro, specificare:" > form
+[ ] Altro, specificare:" > modulo
 
 [actions]
 
-test "$(git config user.name)" != "You" && cat form | grep -v Firma && echo "
-Firma: $(git config user.name)" >> form
+test "$(git config user.name)" != "You" && cat modulo | grep -v Firma && echo "
+Firma: $(git config user.name)" >> modulo
 
 [win]
 
@@ -29,7 +29,7 @@ Firma: $(git config user.name)" >> form
 test "$(git config user.name)" != "You"
 
 # Compila il modulo di iscrizione e fai il commit!
-git show main:form | grep '\[[xX]\]'
+git show main:modulo | grep '\[[xX]\]'
 
 [congrats]
 

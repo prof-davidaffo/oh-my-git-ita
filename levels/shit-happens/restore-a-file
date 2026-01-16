@@ -3,20 +3,20 @@ cards = checkout
 
 [description]
 
-Ops, hai eliminato il file "essay", su cui hai lavorato tutta la notte!
+Ops, hai eliminato il file "tema", su cui hai lavorato tutta la notte!
 
 Per fortuna, Git e' qui per aiutarti! Puoi usare `git checkout` per ripristinare il file!
 
 [setup]
 
-echo important > essay
+echo importante > tema
 git add .
 git commit -m "Initial commit"
-echo "contenuto importante" > essay
-git commit -am "Improve essay"
-rm essay
+echo "contenuto importante" > tema
+git commit -am "Migliora tema"
+rm tema
 
 [win]
 
 # Ripristina il tema in modo che contenga "contenuto importante"
-test "$(cat essay)" = "contenuto importante"
+test "$(cat tema)" = "contenuto importante"

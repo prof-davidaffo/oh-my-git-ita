@@ -9,7 +9,7 @@ Come puoi pushare tag e branch su un remote? E come puoi eliminarli di nuovo?
 
 [setup yours]
 
-echo "Riga 1" > essay
+echo "Riga 1" > tema
 git add .
 git commit -m "Initial commit"
 
@@ -18,5 +18,5 @@ git push -u friend main
 [setup friend]
 
 git checkout main
-echo "Riga 2" >> essay
+echo "Riga 2" >> tema
 git commit -am "Another line"

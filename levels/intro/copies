@@ -21,22 +21,22 @@ rm -rf .git
 
 echo "~ Perche' voglio imparare Git ~
 
-(Devo ancora scriverlo.)" >> form.txt
+(Devo ancora scriverlo.)" >> modulo.txt
 
 
 echo "~ Perche' voglio imparare Git ~
 
-- Per poter annullare gli errori" >> form2.txt
+- Per poter annullare gli errori" >> modulo2.txt
 
 
 echo "~ Perche' voglio imparare Git ~
 
 - Per poter annullare gli errori
-- Per tenere traccia dei miei progetti nel tempo" >> form2_final.txt
+- Per tenere traccia dei miei progetti nel tempo" >> modulo2_finale.txt
 
-cp form2_final.txt form2_really_final.txt
+cp modulo2_finale.txt modulo2_vero_finale.txt
 
 [win]
 
-# Aggiungi un'altra riga a form2_really_final.txt!
-test "$(cat form2_really_final.txt | wc -l )" -ge 5
+# Aggiungi un'altra riga a modulo2_vero_finale.txt!
+test "$(cat modulo2_vero_finale.txt | wc -l )" -ge 5

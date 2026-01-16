@@ -9,13 +9,13 @@ Ecco un problema simile: ti piaceva molto il tema del primissimo commit e vuoi r
 
 [setup]
 
-echo "versione buona" > essay
+echo "versione buona" > tema
 git add .
 git commit -m "Initial commit"
-echo "versione cattiva" > essay
-git commit -am "\"Improve\" essay"
+echo "versione cattiva" > tema
+git commit -am "\"Migliora\" tema"
 
 [win]
 
 # Prendi la prima versione del tema e fai un nuovo commit con essa.
-test "$(git show main:essay)" = "versione buona"
+test "$(git show main:tema)" = "versione buona"

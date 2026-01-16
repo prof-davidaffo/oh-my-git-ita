@@ -9,29 +9,29 @@ Questo lunedi' e' particolarmente brutto. Sei arrivato a scuola, ma ci sono alcu
 
 [setup]
 
-echo Esci di casa e inizi a camminare verso scuola. > you
+echo Esci di casa e inizi a camminare verso scuola. > io
 git add .
 git commit -m "Good morning!"
 
-echo Cammini sul lato destro della strada. >> you
+echo Cammini sul lato destro della strada. >> io
 git commit -am "Right side"
 
-echo Salti un tombino sul marciapiede e arrivi a scuola in orario. >> you
+echo Salti un tombino sul marciapiede e arrivi a scuola in orario. >> io
 git commit -am "Jump"
 
 git checkout HEAD^ -b friend
-echo Improvvisamente cadi, finisci in acqua puzzolente e vieni mangiato da un alligatore. >> you
+echo Improvvisamente cadi, finisci in acqua puzzolente e vieni mangiato da un alligatore. >> io
 git commit -am "A new friend"
 
 git checkout HEAD~2 -b music
-echo Cammini sul lato sinistro della strada. >> you
+echo Cammini sul lato sinistro della strada. >> io
 git commit -am "Left side"
 
-echo Siccome sei un po' in ritardo, inizi a correre. Qualcuno butta un pianoforte dalla finestra e ti schiaccia. >> you
+echo Siccome sei un po' in ritardo, inizi a correre. Qualcuno butta un pianoforte dalla finestra e ti schiaccia. >> io
 git commit -am "Sounds nice"
 
 git checkout HEAD^ -b ice-cream
-echo Non hai fretta e cammini lentamente. Prendi anche un gelato lungo la strada. Arrivi a scuola troppo tardi, il tuo insegnante si arrabbia e vieni espulso. >> you
+echo Non hai fretta e cammini lentamente. Prendi anche un gelato lungo la strada. Arrivi a scuola troppo tardi, il tuo insegnante si arrabbia e vieni espulso. >> io
 git commit -am "Yum"
 
 git branch -M main leap

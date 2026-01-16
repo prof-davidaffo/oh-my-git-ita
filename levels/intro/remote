@@ -17,7 +17,7 @@ Benvenuto alla scuola di viaggio nel tempo! :) Ci vediamo domani per la tua prim
 
 [setup]
 
-echo "~ Lista degli studenti attuali ~" > students
+echo "~ Lista degli studenti attuali ~" > studenti
 git add .
 git commit -m "Initial version"
 git push -u teacher main
@@ -30,7 +30,7 @@ git reset --hard main
 
 echo " 
 - Sam
-- Alex" >> students
+- Alex" >> studenti
 
 git add .
 git commit -m "Added two students"
@@ -41,12 +41,12 @@ git commit -m "Added two students"
 test "$(git log --oneline teacher/main | wc -l)" -ge 2
 
 # Aggiungi il tuo nome alla lista degli studenti
-test "$(cat students |wc -l)" -ge 5
+test "$(cat studenti |wc -l)" -ge 5
 
 # Fai il commit del risultato.
-test "$(git show main:students |wc -l)" -ge 5
+test "$(git show main:studenti |wc -l)" -ge 5
 
 [win teacher]
 
 # E usa `git push` per inviarlo al tuo insegnante!
-test "$(git show main:students |wc -l)" -ge 5
+test "$(git show main:studenti |wc -l)" -ge 5

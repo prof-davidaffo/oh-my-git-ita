@@ -21,27 +21,27 @@ Puoi anche tornare indietro di due commit digitando, per esempio:
 
 [setup]
 
-mkdir cage
-echo "Sembra molto affamato." > cage/lion
+mkdir gabbia
+echo "Sembra molto affamato." > gabbia/leone
 
 echo "Un bambino piccolo.
-Gli piacciono tantissimo i gatti!" > child
+Gli piacciono tantissimo i gatti!" > bambino
 git add .
 git commit -m "The beginning"
 
-echo "Sta tenendo un lecca-lecca." >> child
+echo "Sta tenendo un lecca-lecca." >> bambino
 git commit -am "The child buys something"
 
-mv child cage
+mv bambino gabbia
 git add .
 git commit -m "The child climbs somewhere"
 
-git rm cage/child
-echo "Sembra felice. :)" > cage/lion
+git rm gabbia/bambino
+echo "Sembra felice. :)" > gabbia/leone
 git add .
 git commit -m "Oh no"
 
-echo "Sta dormendo." > cage/lion
+echo "Sta dormendo." > gabbia/leone
 git add .
 git commit -m "Nap time!"
 
@@ -51,10 +51,10 @@ git branch -d main
 [win]
 
 # Assicurati che il bambino sia felice.
-git ls-tree --name-only -r HEAD | grep child
+git ls-tree --name-only -r HEAD | grep bambino
 
 # Assicurati che il leone mangi qualcosa.
-git show HEAD:cage/lion | grep -v "molto affamato"
+git show HEAD:gabbia/leone | grep -v "molto affamato"
 
 [congrats]
 

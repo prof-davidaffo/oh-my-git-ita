@@ -24,12 +24,12 @@ Hai gia' notato che puoi trascinare tutti gli oggetti? :)
 
 [setup goal]
 
-echo "Ciao" > file1
-echo "Cio" > file2
-echo "Ciu" > file3
-git hash-object -w file1
-git hash-object -w file2
-git hash-object -w file3
+echo "Ciao" > file_uno
+echo "Cio" > file_due
+echo "Ciu" > file_tre
+git hash-object -w file_uno
+git hash-object -w file_due
+git hash-object -w file_tre
 
 [win]
 

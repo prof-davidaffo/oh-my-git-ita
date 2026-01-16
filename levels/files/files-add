@@ -14,7 +14,7 @@ Non dimenticare di aggiungere un colore e una descrizione anche ai tuoi nuovi mo
 
 [setup]
 
-echo Un letto accogliente yellow. > bed
+echo Un letto accogliente yellow. > letto
 
 [win]
 

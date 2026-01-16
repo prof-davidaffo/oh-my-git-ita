@@ -15,7 +15,7 @@ echo "Non hai una baguette.
 
 Non hai caffe'.
 
-Non hai una ciambella." > you
+Non hai una ciambella." > io
 
 git add .
 git commit -m "The Beginning"
@@ -25,7 +25,7 @@ echo "Hai una baguette.
 
 Non hai caffe'.
 
-Non hai una ciambella." > you
+Non hai una ciambella." > io
 git add .
 git commit -m "You buy a baguette"
 
@@ -33,7 +33,7 @@ echo "Hai mangiato una baguette.
 
 Non hai caffe'.
 
-Non hai una ciambella." > you
+Non hai una ciambella." > io
 git add .
 git commit -m "You eat the baguette"
 
@@ -42,7 +42,7 @@ echo "Non hai una baguette.
 
 Hai caffe'.
 
-Non hai una ciambella." > you
+Non hai una ciambella." > io
 git add .
 git commit -m "You buy some coffee"
 
@@ -50,7 +50,7 @@ echo "Non hai una baguette.
 
 Hai bevuto il caffe'.
 
-Non hai una ciambella." > you
+Non hai una ciambella." > io
 git add .
 git commit -m "You drink the coffee"
 
@@ -59,7 +59,7 @@ echo "Non hai una baguette.
 
 Non hai caffe'.
 
-Hai una ciambella." > you
+Hai una ciambella." > io
 git add .
 git commit -m "You buy a donut"
 
@@ -67,7 +67,7 @@ echo "Non hai una baguette.
 
 Non hai caffe'.
 
-Hai mangiato una ciambella." > you
+Hai mangiato una ciambella." > io
 git add .
 git commit -m "You eat the donut"
 
@@ -77,7 +77,7 @@ git checkout --detach main
 [win]
 
 # Riordina tutti e tre i branch in uno solo e sposta il riferimento del branch main
-{ git show main:you | grep "Hai mangiato.*baguette"; } && { git show main:you | grep "Hai bevuto.*caffe'"; } && { git show main:you | grep "Hai mangiato.*ciambella"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
+{ git show main:io | grep "Hai mangiato.*baguette"; } && { git show main:io | grep "Hai bevuto.*caffe'"; } && { git show main:io | grep "Hai mangiato.*ciambella"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
 
 [congrats]
 

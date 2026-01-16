@@ -7,9 +7,9 @@ L'index e' davvero utile, perche' ci permette di essere precisi su quali modific
 
 [setup]
 
-echo "Un martello in equilibrio sul manico." > hammer
-echo "Una bottiglia con un liquido trasparente." > bottle
-echo "Una zolletta di zucchero bianca." > sugar_cube
+echo "Un martello in equilibrio sul manico." > martello
+echo "Una bottiglia con un liquido trasparente." > bottiglia
+echo "Una zolletta di zucchero bianca." > zolletta_zucchero
 
 git add .
 git commit -m "The beginning"

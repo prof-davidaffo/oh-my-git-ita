@@ -19,7 +19,7 @@ NON indossi i pantaloni.
 
 NON indossi una maglia.
 
-NON indossi le scarpe." > you
+NON indossi le scarpe." > io
 git add .
 
 git commit -m "The Beginning"
@@ -32,7 +32,7 @@ NON indossi i pantaloni.
 
 NON indossi una maglia.
 
-Indossi le scarpe." > you
+Indossi le scarpe." > io
 git commit -am "Put on shoes"
 
 echo "Ti sei appena svegliato.
@@ -43,7 +43,7 @@ Indossi i pantaloni.
 
 NON indossi una maglia.
 
-Indossi le scarpe." > you
+Indossi le scarpe." > io
 git commit -am "Put on pants"
 
 echo "Ti sei appena svegliato.
@@ -54,7 +54,7 @@ Indossi i pantaloni.
 
 NON indossi una maglia.
 
-Indossi le scarpe." > you
+Indossi le scarpe." > io
 git commit -am "Put on underwear"
 
 echo "Ti sei appena svegliato.
@@ -65,7 +65,7 @@ Indossi i pantaloni.
 
 Indossi una maglia.
 
-Indossi le scarpe." > you
+Indossi le scarpe." > io
 git commit -am "Put on shirt"
 
 [win]

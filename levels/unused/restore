@@ -9,20 +9,20 @@ Nessun problema, puoi usare la carta `checkout` per ripristinare il tuo tema da 
 
 [setup]
 
-echo "Versione iniziale" > essay.txt
+echo "Versione iniziale" > tema.txt
 git add .
 git commit -m "Initial commit"
 
-echo "Versione migliorata" > essay.txt
+echo "Versione migliorata" > tema.txt
 git commit -a -m "Improved version"
 
-echo "Versione migliore" > essay.txt
+echo "Versione migliore" > tema.txt
 git commit -a -m "Best version"
 
-echo "Versione meno buona" > essay.txt
+echo "Versione meno buona" > tema.txt
 git commit -a -m "Less-good version"
 
 [win]
 
 # Per nostalgia, ripristina il primissimo backup che hai fatto!
-diff essay.txt <(echo "Versione migliore")
+diff tema.txt <(echo "Versione migliore")

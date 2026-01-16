@@ -7,19 +7,19 @@ Sia tu sia il tuo amico avete lavorato sul file e volete sincronizzarvi!
 
 [setup yours]
 
-echo "La rimessa delle bici dovrebbe essere ???" > file
+echo "La rimessa delle bici dovrebbe essere ???" > documento
 git add .
 git commit -m "initial"
 
 git push -u friend main
 
-echo "La rimessa delle bici dovrebbe essere verde" > file
+echo "La rimessa delle bici dovrebbe essere verde" > documento
 
 [setup friend]
 
 git checkout main
 
-echo "La rimessa delle bici dovrebbe essere blu" > file
+echo "La rimessa delle bici dovrebbe essere blu" > documento
 git commit -a -m "friends version"
 
 [win]

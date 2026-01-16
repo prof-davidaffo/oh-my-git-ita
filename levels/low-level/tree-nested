@@ -10,11 +10,11 @@ Per risolvere questo livello, costruisci un omino stilizzato come mostrato a sin
 
 [setup goal]
 
-echo "Sono il braccio sinistro" > arm1
-echo "Sono il braccio destro" > arm2
-mkdir hip
-echo "Sono la gamba sinistra" > hip/leg1
-echo "Sono la gamba destra" > hip/leg2
+echo "Sono il braccio sinistro" > braccio_sx
+echo "Sono il braccio destro" > braccio_dx
+mkdir anca
+echo "Sono la gamba sinistra" > anca/gamba_sx
+echo "Sono la gamba destra" > anca/gamba_dx
 git add .
 git write-tree
 

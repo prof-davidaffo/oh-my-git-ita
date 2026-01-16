@@ -12,21 +12,21 @@ Fai un commit dal tree in questo repository!
 
 [setup]
 
-touch empty_file
+touch file_vuoto
 git add .
 git write-tree
 
-rm empty_file
-git update-index --remove empty_file
+rm file_vuoto
+git update-index --remove file_vuoto
 
 [setup goal]
 
-touch empty_file
+touch file_vuoto
 git add .
 git write-tree
 
-rm empty_file
-git update-index --remove empty_file
+rm file_vuoto
+git update-index --remove file_vuoto
 
 git commit-tree 3185 -m 'Clever commit message'
 

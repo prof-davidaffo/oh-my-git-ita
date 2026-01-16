@@ -7,20 +7,20 @@ Qui entrambe le modifiche sono finite in un solo commit! Dividile in due commit.
 
 [setup]
 
-echo qualcosa > file1
-echo qualcos'altro > file2
+echo qualcosa > file_uno
+echo qualcos'altro > file_due
 git add .
 git commit -m "Initial commit"
 
-echo questo dovrebbe succedere prima >> file1
-echo e questo dovrebbe succedere dopo >> file2
+echo questo dovrebbe succedere prima >> file_uno
+echo e questo dovrebbe succedere dopo >> file_due
 git commit -am "Both together"
 
-echo questa e' un'altra modifica >> file1
-echo questa e' un'altra modifica >> file2
+echo questa e' un'altra modifica >> file_uno
+echo questa e' un'altra modifica >> file_due
 git commit -am "Something else"
 
 [win]
 
-test "$(git diff-tree --no-commit-id --name-status -r main^)" = "M	file2" &&
-test "$(git diff-tree --no-commit-id --name-status -r main~2)" = "M	file1"
+test "$(git diff-tree --no-commit-id --name-status -r main^)" = "M	file_due" &&
+test "$(git diff-tree --no-commit-id --name-status -r main~2)" = "M	file_uno"

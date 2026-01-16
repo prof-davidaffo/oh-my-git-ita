@@ -9,15 +9,15 @@ Cosa e' successo qui? Fai due commit dalle modifiche (usando la carta "add"), in
 
 [setup]
 
-echo qualcosa > file1
-echo qualcos'altro > file2
+echo qualcosa > file_uno
+echo qualcos'altro > file_due
 git add .
 git commit -m "Initial commit"
 
-echo questo dovrebbe succedere prima >> file1
-echo e questo dovrebbe succedere dopo >> file2
+echo questo dovrebbe succedere prima >> file_uno
+echo e questo dovrebbe succedere dopo >> file_due
 
 [win]
 
-test "$(git diff-tree --no-commit-id --name-status -r main)" = "M	file2" &&
-test "$(git diff-tree --no-commit-id --name-status -r main^)" = "M	file1"
+test "$(git diff-tree --no-commit-id --name-status -r main)" = "M	file_due" &&
+test "$(git diff-tree --no-commit-id --name-status -r main^)" = "M	file_uno"

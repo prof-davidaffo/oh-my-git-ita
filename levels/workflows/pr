@@ -12,15 +12,15 @@ rm -rf .git
 
 [setup friend]
 
-echo "2 + 3 = " > file
+echo "2 + 3 = " > documento
 git add .
 git commit -m "Initial commit"
 
 [actions friend]
 
 git ls-remote yours | grep pr && git fetch yours && git merge yours/solution
-git show main:file | grep 5 && hint "Grazie!"
+git show main:documento | grep 5 && hint "Grazie!"
 
 [win friend]
 
-git show main:file | grep 5
+git show main:documento | grep 5

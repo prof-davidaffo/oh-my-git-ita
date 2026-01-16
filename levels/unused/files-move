@@ -10,15 +10,15 @@ Per questo, non ti serve un letto e puoi costruire un altro mobile con il legno!
 
 [setup]
 
-echo Un mobile yellow con molti cassetti. > cupboard
-echo Uno scaffale yellow davvero grande. > shelf
-echo Un letto yellow comodo con cuscini yellow. > bed
+echo Un mobile yellow con molti cassetti. > armadio
+echo Uno scaffale yellow davvero grande. > scaffale
+echo Un letto yellow comodo con cuscini yellow. > letto
 
 [win]
 
 # Rinomina il letto in qualcos'altro e dagli una nuova descrizione!
 NUM_FILES="$(ls | wc -l)"
-! test -f bed && test "$NUM_FILES" -ge 3 && ! grep -r "yellow bed" .
+! test -f letto && test "$NUM_FILES" -ge 3 && ! grep -r "yellow letto" .
 
 [congrats]
 

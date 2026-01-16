@@ -9,23 +9,23 @@ Ma Git e' qui per aiutarti! Per scartare tutte le modifiche fatte dal gatto e to
 
 [setup]
 
-echo "A" >> essay.txt
+echo "A" >> tema.txt
 git add .
 git commit -m "Initial commit"
 
-echo "B" >> essay.txt
+echo "B" >> tema.txt
 git commit -a -m "Improved version"
 
-echo "C" >> essay.txt
+echo "C" >> tema.txt
 git commit -a -m "Even better version"
 
-echo "D" >> essay.txt
+echo "D" >> tema.txt
 git commit -a -m "Marvelous version"
 
 echo "blarg
-blaaaargh" > essay.txt
+blaaaargh" > tema.txt
 
 [win]
 
 # Ripristina la versione dell'ultimo commit.
-cat essay.txt | grep D
+cat tema.txt | grep D

@@ -8,10 +8,10 @@ Elimina tutti i ref! :P (Beh, tranne HEAD. HEAD e' speciale.)
 
 [setup]
 
-echo ciao > hello
-echo mondo > world
-BLOB1=$(git hash-object -w hello)
-BLOB2=$(git hash-object -w world)
+echo ciao > ciao
+echo mondo > mondo
+BLOB1=$(git hash-object -w ciao)
+BLOB2=$(git hash-object -w mondo)
 git add .
 TREE=$(git write-tree)
 COMMIT=$(git commit-tree $TREE -m "Initial commit")
@@ -21,10 +21,10 @@ git update-ref refs/beautiful_commit "$COMMIT"
 
 [setup goal]
 
-echo ciao > hello
-echo mondo > world
-BLOB1=$(git hash-object -w hello)
-BLOB2=$(git hash-object -w world)
+echo ciao > ciao
+echo mondo > mondo
+BLOB1=$(git hash-object -w ciao)
+BLOB2=$(git hash-object -w mondo)
 git add .
 TREE=$(git write-tree)
 COMMIT=$(git commit-tree $TREE -m "Initial commit")

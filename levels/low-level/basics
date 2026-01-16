@@ -7,7 +7,7 @@ Per questo prototipo, diamo per scontato che tu abbia un po' di esperienza con l
 - cat file
 - mkdir dir
 
-Trova l'indovinello nella directory corrente e scrivi la risposta nel file "answer"!
+Trova l'indovinello nella directory corrente e scrivi la risposta nel file "risposta"!
 
 [congrats]
 
@@ -17,10 +17,10 @@ Per ragioni tecniche, in questo prototipo non puoi ancora usare `cd`. Ma non ci 
 
 [setup]
 
-mkdir riddle
-echo "trt d ml" > riddle/consonants
-echo "oa iee" > riddle/vowels
+mkdir indovinello
+echo "trt d ml" > indovinello/consonanti
+echo "oa iee" > indovinello/vocali
 
 [win]
 
-cat answer | grep -i "torta \\?di \\?mele"
+cat risposta | grep -i "torta \\?di \\?mele"
