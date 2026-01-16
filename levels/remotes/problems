@@ -9,7 +9,7 @@ Sia tu sia il tuo amico avete lavorato sul file e volete sincronizzarvi!
 
 echo "La rimessa delle bici dovrebbe essere ???" > documento
 git add .
-git commit -m "initial"
+git commit -m "iniziale"
 
 git push -u friend main
 
@@ -20,7 +20,7 @@ echo "La rimessa delle bici dovrebbe essere verde" > documento
 git checkout main
 
 echo "La rimessa delle bici dovrebbe essere blu" > documento
-git commit -a -m "friends version"
+git commit -a -m "versione amico"
 
 [win]
 

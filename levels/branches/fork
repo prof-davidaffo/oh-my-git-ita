@@ -27,14 +27,14 @@ echo "Sembra molto affamato." > gabbia/leone
 echo "Un bambino piccolo.
 Gli piacciono tantissimo i gatti!" > bambino
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
 echo "Sta tenendo un lecca-lecca." >> bambino
-git commit -am "The child buys something"
+git commit -am "Il bambino compra qualcosa"
 
 mv bambino gabbia
 git add .
-git commit -m "The child climbs somewhere"
+git commit -m "Il bambino si arrampica"
 
 git rm gabbia/bambino
 echo "Sembra felice. :)" > gabbia/leone
@@ -43,7 +43,7 @@ git commit -m "Oh no"
 
 echo "Sta dormendo." > gabbia/leone
 git add .
-git commit -m "Nap time!"
+git commit -m "Ora del pisolino!"
 
 git checkout --detach
 git branch -d main

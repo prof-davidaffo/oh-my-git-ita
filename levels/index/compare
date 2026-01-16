@@ -10,7 +10,7 @@ Dai un'occhiata a queste due linee temporali. Hanno esattamente lo stesso risult
 [win]
 
 # Giusto! Avere ogni modifica nel suo commit rende piu' facile capire cosa sta succedendo! Impariamo come farlo!
-git branch --show-current | grep step-by-step
+git branch --show-current | grep passo-passo
 
 [setup]
 
@@ -20,32 +20,32 @@ echo "Una candela che brucia con una fiamma blu." > candela
 echo "Un rilevatore di fumo. E' assolutamente silenzioso." > rilevatore_fumo
 
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
-git branch -M all-at-once
+git branch -M tutto-in-uno
 
 echo "La palla ora tocca il libro." > palla
 echo "Il libro e' caduto." > libro
 echo "La candela si e' spenta." > candela
 
-git commit -am "The end"
+git commit -am "La fine"
 
 git checkout HEAD^
 
-git checkout -b step-by-step
+git checkout -b passo-passo
 
 echo "La palla ora tocca il libro." > palla
-git commit -am "The ball rolls towards the book"
+git commit -am "La palla rotola verso il libro"
 
 echo "Il libro e' caduto." > libro
-git commit -am "The book falls over"
+git commit -am "Il libro cade"
 
 echo "La candela si e' spenta." > candela
-git commit -am "The book blows out the candle"
+git commit -am "Il libro spegne la candela"
 
 git checkout HEAD~3
 
 [win]
 
 # Scegli la linea temporale piu' chiara e fai suonare l'allarme!
-git show step-by-step:rilevatore_fumo | tail -n 1 | grep -v "assolutamente silenzioso"
+git show passo-passo:rilevatore_fumo | tail -n 1 | grep -v "assolutamente silenzioso"

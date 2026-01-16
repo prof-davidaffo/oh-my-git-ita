@@ -17,7 +17,7 @@ echo "Sta bruciando!" > candela_rossa
 echo "Sta bruciando!" > candela_verde
 echo "Sta bruciando!" > candela_blu
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
 echo "Si e' spenta." > candela_rossa
 echo "Si e' spenta." > candela_verde

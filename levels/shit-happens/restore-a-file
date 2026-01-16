@@ -11,7 +11,7 @@ Per fortuna, Git e' qui per aiutarti! Puoi usare `git checkout` per ripristinare
 
 echo importante > tema
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 echo "contenuto importante" > tema
 git commit -am "Migliora tema"
 rm tema

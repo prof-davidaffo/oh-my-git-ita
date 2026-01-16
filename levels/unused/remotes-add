@@ -23,7 +23,7 @@ git remote remove friend
 
 echo "Sono davvero fedele alla nostra amicizia! <3" > lettera_amore
 git add .
-git commit -m "Write a letter"
+git commit -m "Scrivi una lettera"
 
 [win]
 

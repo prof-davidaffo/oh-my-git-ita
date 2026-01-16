@@ -5,15 +5,15 @@ cards = checkout add reset-file checkout-file commit merge rebase
 
 echo "Ti svegli." > io
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
 echo "Bevi un caffe'." >> io
-git commit -am "First things first"
+git commit -am "Prima le cose importanti"
 
 echo "Senti bussare alla porta." >> io
-git commit -am "Who's there?"
+git commit -am "Chi e'?"
 
-git branch not_main
+git branch non_main
 
 [description]
 

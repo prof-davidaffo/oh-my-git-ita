@@ -10,15 +10,15 @@ Qui entrambe le modifiche sono finite in un solo commit! Dividile in due commit.
 echo qualcosa > file_uno
 echo qualcos'altro > file_due
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 
 echo questo dovrebbe succedere prima >> file_uno
 echo e questo dovrebbe succedere dopo >> file_due
-git commit -am "Both together"
+git commit -am "Entrambi insieme"
 
 echo questa e' un'altra modifica >> file_uno
 echo questa e' un'altra modifica >> file_due
-git commit -am "Something else"
+git commit -am "Qualcos'altro"
 
 [win]
 

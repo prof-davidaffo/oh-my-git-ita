@@ -19,7 +19,7 @@ Benvenuto alla scuola di viaggio nel tempo! :) Ci vediamo domani per la tua prim
 
 echo "~ Lista degli studenti attuali ~" > studenti
 git add .
-git commit -m "Initial version"
+git commit -m "Versione iniziale"
 git push -u teacher main
 
 git update-ref -d refs/remotes/teacher/main
@@ -33,7 +33,7 @@ echo "
 - Alex" >> studenti
 
 git add .
-git commit -m "Added two students"
+git commit -m "Aggiunti due studenti"
 
 [win]
 

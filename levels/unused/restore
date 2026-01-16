@@ -3,7 +3,7 @@ cards = checkout-from
 
 [description]
 
-Hai lavorato al tuo tema per un po'. Ma non sei felice delle modifiche fatte di recente. Vuoi tornare alla versione chiamata "Best version"!
+Hai lavorato al tuo tema per un po'. Ma non sei felice delle modifiche fatte di recente. Vuoi tornare alla versione chiamata "Versione migliore"!
 
 Nessun problema, puoi usare la carta `checkout` per ripristinare il tuo tema da un commit piu' vecchio!
 
@@ -11,16 +11,16 @@ Nessun problema, puoi usare la carta `checkout` per ripristinare il tuo tema da 
 
 echo "Versione iniziale" > tema.txt
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 
 echo "Versione migliorata" > tema.txt
-git commit -a -m "Improved version"
+git commit -a -m "Versione migliorata"
 
 echo "Versione migliore" > tema.txt
-git commit -a -m "Best version"
+git commit -a -m "Versione migliore"
 
 echo "Versione meno buona" > tema.txt
-git commit -a -m "Less-good version"
+git commit -a -m "Versione meno buona"
 
 [win]
 

@@ -2,7 +2,7 @@
 
 Un commit puo' avere piu' parent! Puoi specificare l'opzione -p piu' volte, cosi':
 
-    git commit-tree <tree> -m "Description" -p <parent1> -p <parent2>
+    git commit-tree <tree> -m "Descrizione" -p <parent1> -p <parent2>
 
 Costruisci una forma a rombo con i commit, dove due commit puntano allo stesso parent e un quarto commit punta a entrambi.
 
@@ -11,10 +11,10 @@ Costruisci una forma a rombo con i commit, dove due commit puntano allo stesso p
 [setup goal]
 
 TREE=$(git write-tree)
-SOUTH=$(git commit-tree $TREE -m "South")
-EAST=$(git commit-tree $TREE -m "East" -p $SOUTH)
-WEST=$(git commit-tree $TREE -m "West" -p $SOUTH)
-NORTH=$(git commit-tree $TREE -m "Nort" -p $EAST -p $WEST)
+SOUTH=$(git commit-tree $TREE -m "Sud")
+EAST=$(git commit-tree $TREE -m "Est" -p $SOUTH)
+WEST=$(git commit-tree $TREE -m "Ovest" -p $SOUTH)
+NORTH=$(git commit-tree $TREE -m "Nord" -p $EAST -p $WEST)
 
 [win]
 

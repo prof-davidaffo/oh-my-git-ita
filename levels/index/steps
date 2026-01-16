@@ -12,7 +12,7 @@ echo "Una bottiglia con un liquido trasparente." > bottiglia
 echo "Una zolletta di zucchero bianca." > zolletta_zucchero
 
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
 [win]
 

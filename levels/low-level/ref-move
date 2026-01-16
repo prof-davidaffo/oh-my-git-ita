@@ -14,7 +14,7 @@ BLOB1=$(git hash-object -w ciao)
 BLOB2=$(git hash-object -w mondo)
 git add .
 TREE=$(git write-tree)
-COMMIT=$(git commit-tree $TREE -m "Initial commit")
+COMMIT=$(git commit-tree $TREE -m "Commit iniziale")
 
 git update-ref refs/a "$BLOB1"
 git update-ref refs/b "$COMMIT"
@@ -27,7 +27,7 @@ BLOB1=$(git hash-object -w ciao)
 BLOB2=$(git hash-object -w mondo)
 git add .
 TREE=$(git write-tree)
-COMMIT=$(git commit-tree $TREE -m "Initial commit")
+COMMIT=$(git commit-tree $TREE -m "Commit iniziale")
 
 git update-ref refs/a "$BLOB1"
 git update-ref refs/b "$COMMIT"

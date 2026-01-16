@@ -14,7 +14,7 @@ Non hai caffe'.
 Non hai una ciambella." > io
 
 git add .
-git commit -m "The Beginning"
+git commit -m "L'inizio"
 
 echo "Hai una baguette.
 
@@ -22,7 +22,7 @@ Non hai caffe'.
 
 Non hai una ciambella." > io
 git add .
-git commit -m "You buy a baguette"
+git commit -m "Compri una baguette"
 
 echo "Hai mangiato una baguette.
 
@@ -30,7 +30,7 @@ Non hai caffe'.
 
 Non hai una ciambella." > io
 git add .
-git commit -m "You eat the baguette"
+git commit -m "Mangi la baguette"
 
 git checkout HEAD~2
 echo "Non hai una baguette.
@@ -39,7 +39,7 @@ Hai caffe'.
 
 Non hai una ciambella." > io
 git add .
-git commit -m "You buy some coffee"
+git commit -m "Compri del caffe'"
 
 echo "Non hai una baguette.
 
@@ -47,7 +47,7 @@ Hai bevuto il caffe'.
 
 Non hai una ciambella." > io
 git add .
-git commit -m "You drink the coffee"
+git commit -m "Bevi il caffe'"
 
 git checkout HEAD~2
 echo "Non hai una baguette.
@@ -56,7 +56,7 @@ Non hai caffe'.
 
 Hai una ciambella." > io
 git add .
-git commit -m "You buy a donut"
+git commit -m "Compri una ciambella"
 
 echo "Non hai una baguette.
 
@@ -64,7 +64,7 @@ Non hai caffe'.
 
 Hai mangiato una ciambella." > io
 git add .
-git commit -m "You eat the donut"
+git commit -m "Mangi la ciambella"
 
 git checkout --detach
 git branch -D main

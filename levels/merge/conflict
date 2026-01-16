@@ -15,16 +15,16 @@ Fai in modo che la linea temporale finale sia la "main".
 
 echo "Mi sono appena svegliato. Ho fame." > sam
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
-git checkout -b pancakes
+git checkout -b frittelle
 echo "Ho fatto colazione con pancake ai mirtilli e sciroppo d'acero." > sam
 git add .
-git commit -m "Pancakes!"
+git commit -m "Frittelle!"
 
 echo "
 Sono al lavoro." >> sam
-git commit -am "Go to work"
+git commit -am "Vado al lavoro"
 
 git checkout -b muesli main
 echo "Ho fatto colazione con muesli d'avena e fragole." > sam
@@ -33,7 +33,7 @@ git commit -m "Muesli!"
 
 echo "
 Sono al lavoro." >> sam
-git commit -am "Go to work"
+git commit -am "Vado al lavoro"
 
 git checkout main
 

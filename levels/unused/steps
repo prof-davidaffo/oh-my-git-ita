@@ -12,7 +12,7 @@ Cosa e' successo qui? Fai due commit dalle modifiche (usando la carta "add"), in
 echo qualcosa > file_uno
 echo qualcos'altro > file_due
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 
 echo questo dovrebbe succedere prima >> file_uno
 echo e questo dovrebbe succedere dopo >> file_due

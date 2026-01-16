@@ -13,9 +13,9 @@ echo ciao > ciao
 BLOB=$(git hash-object -w ciao)
 echo mondo > mondo
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 echo bla bla >> mondo
-git commit -a -m "Second commit"
+git commit -a -m "Secondo commit"
 git update-ref refs/important HEAD
 git update-ref refs/interesting "$BLOB"
 
@@ -25,9 +25,9 @@ echo ciao > ciao
 BLOB=$(git hash-object -w ciao)
 echo mondo > mondo
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 echo bla bla >> mondo
-git commit -a -m "Second commit"
+git commit -a -m "Secondo commit"
 git update-ref refs/important HEAD
 git update-ref refs/interesting "$BLOB"
 

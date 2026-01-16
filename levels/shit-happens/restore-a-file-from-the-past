@@ -11,7 +11,7 @@ Ecco un problema simile: ti piaceva molto il tema del primissimo commit e vuoi r
 
 echo "versione buona" > tema
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 echo "versione cattiva" > tema
 git commit -am "\"Migliora\" tema"
 

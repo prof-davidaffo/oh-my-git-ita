@@ -16,12 +16,12 @@ Prova a fare il merge di entrambi i commit e poi interrompilo.
 echo "Sta iniziando un nuovo giorno" > io
 
 git add .
-git commit -m "Start"
+git commit -m "Inizio"
 
 echo "Cammini lungo la Via Principale." >> io
 
 git add .
-git commit -m "Main Lane"
+git commit -m "Via principale"
 
 
 git checkout HEAD~1
@@ -29,7 +29,7 @@ git checkout HEAD~1
 echo "Cammini lungo la Via Laterale." >> io
 
 git add .
-git commit -m "Side Lane"
+git commit -m "Via laterale"
 
 git checkout HEAD~1
 

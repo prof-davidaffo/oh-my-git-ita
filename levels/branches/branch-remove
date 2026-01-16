@@ -11,36 +11,36 @@ Questo lunedi' e' particolarmente brutto. Sei arrivato a scuola, ma ci sono alcu
 
 echo Esci di casa e inizi a camminare verso scuola. > io
 git add .
-git commit -m "Good morning!"
+git commit -m "Buongiorno!"
 
 echo Cammini sul lato destro della strada. >> io
-git commit -am "Right side"
+git commit -am "Lato destro"
 
 echo Salti un tombino sul marciapiede e arrivi a scuola in orario. >> io
-git commit -am "Jump"
+git commit -am "Salto"
 
-git checkout HEAD^ -b friend
+git checkout HEAD^ -b amico
 echo Improvvisamente cadi, finisci in acqua puzzolente e vieni mangiato da un alligatore. >> io
-git commit -am "A new friend"
+git commit -am "Un nuovo amico"
 
-git checkout HEAD~2 -b music
+git checkout HEAD~2 -b musica
 echo Cammini sul lato sinistro della strada. >> io
-git commit -am "Left side"
+git commit -am "Lato sinistro"
 
 echo Siccome sei un po' in ritardo, inizi a correre. Qualcuno butta un pianoforte dalla finestra e ti schiaccia. >> io
-git commit -am "Sounds nice"
+git commit -am "Che bello"
 
-git checkout HEAD^ -b ice-cream
+git checkout HEAD^ -b gelato
 echo Non hai fretta e cammini lentamente. Prendi anche un gelato lungo la strada. Arrivi a scuola troppo tardi, il tuo insegnante si arrabbia e vieni espulso. >> io
-git commit -am "Yum"
+git commit -am "Gnam"
 
-git branch -M main leap
-git checkout leap^^
+git branch -M main salto
+git checkout salto^^
 
 [win]
 
 # Trova i branch sbagliati ed eliminali. Tieni solo il migliore.
-test "$(git show-ref --heads | cut -f2 -d' ')" = "$(echo refs/heads/leap)"
+test "$(git show-ref --heads | cut -f2 -d' ')" = "$(echo refs/heads/salto)"
 
 [congrats]
 

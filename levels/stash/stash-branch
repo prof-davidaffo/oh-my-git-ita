@@ -22,12 +22,12 @@ suggerimento3
 echo "Torta di mele:" > ricetta
 
 git add .
-git commit -m "creating a recipe"
+git commit -m "creo una ricetta"
 
 echo "- 4 mele" >> ricetta
 
 git add .
-git commit -m "Adding ingredients"
+git commit -m "Aggiungo ingredienti"
 
 echo "- 500g di farina" >> ricetta
 git stash push

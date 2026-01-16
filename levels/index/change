@@ -17,7 +17,7 @@ Bene! L'index a volte e' chiamato anche "staging area": contiene esattamente cio
 
 echo "La candela brucia con una fiamma blu." > candela
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
 [win]
 

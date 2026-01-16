@@ -9,21 +9,21 @@ Per rendere piu' facile capire quale linea temporale e' quale, puoi creare porta
 
 [cli]
 
-I branch rendono anche molto facile viaggiare tra posti diversi usando la riga di comando! Non appena hai un branch chiamato "birthday", puoi digitare `git checkout birthday` per andarci!
+I branch rendono anche molto facile viaggiare tra posti diversi usando la riga di comando! Non appena hai un branch chiamato "compleanno", puoi digitare `git checkout compleanno` per andarci!
 
 [setup]
 
 echo "Impacchetti il regalo di compleanno e prendi il biglietto del concerto." > io
 git add .
-git commit -m "Evening preparations"
+git commit -m "Preparativi serali"
 echo "Vai alla festa di compleanno!" >> io
 git add .
-git commit -m "Go to the birthday"
+git commit -m "Vai al compleanno"
 
 git checkout HEAD~1
 echo "Vai al concerto!" > io
 git add .
-git commit -m "Go to the concert"
+git commit -m "Vai al concerto"
 
 git checkout HEAD~1
 
@@ -31,11 +31,11 @@ git branch -D main
 
 [win]
 
-# Crea un branch chiamato 'birthday' che punti alla linea temporale del compleanno.
-git show birthday | grep 'festa di compleanno'
+# Crea un branch chiamato 'compleanno' che punti alla linea temporale del compleanno.
+git show compleanno | grep 'Vai alla festa di compleanno'
 
-# Crea un branch chiamato 'concert' che punti alla linea temporale del concerto.
-git show concert | grep 'Vai al concerto'
+# Crea un branch chiamato 'concerto' che punti alla linea temporale del concerto.
+git show concerto | grep 'Vai al concerto'
 
 [congrats]
 

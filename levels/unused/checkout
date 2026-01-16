@@ -11,16 +11,16 @@ Ma Git e' qui per aiutarti! Per scartare tutte le modifiche fatte dal gatto e to
 
 echo "A" >> tema.txt
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 
 echo "B" >> tema.txt
-git commit -a -m "Improved version"
+git commit -a -m "Versione migliorata"
 
 echo "C" >> tema.txt
-git commit -a -m "Even better version"
+git commit -a -m "Versione ancora migliore"
 
 echo "D" >> tema.txt
-git commit -a -m "Marvelous version"
+git commit -a -m "Versione meravigliosa"
 
 echo "blarg
 blaaaargh" > tema.txt

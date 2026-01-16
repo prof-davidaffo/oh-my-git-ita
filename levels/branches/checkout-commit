@@ -18,17 +18,17 @@ Questo inserira' l'identificatore univoco del commit!
 echo "Questo salvadanaio appartiene alla sorella maggiore.
 Contiene 10 monete." > salvadanaio
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
 echo "Una ragazza con capelli castani e ricci." > sorellina
 git add .
-git commit -m "Little sister comes in"
+git commit -m "La sorellina arriva"
 
 echo "Ha 10 monete." >> sorellina
 echo "Questo salvadanaio appartiene alla sorella maggiore.
 E' vuoto." > salvadanaio
 git add .
-git commit -m "Little sister does something"
+git commit -m "La sorellina fa qualcosa"
 
 git checkout HEAD^^
 git branch -df main

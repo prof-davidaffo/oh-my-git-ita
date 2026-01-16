@@ -13,7 +13,7 @@ echo a > a
 echo x > b
 echo x > c
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 echo x > a
 echo b > b
 git add b

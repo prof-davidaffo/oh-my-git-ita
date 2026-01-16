@@ -3,7 +3,7 @@ cards = clone commit-auto reset-hard checkout file-new branch
 
 [description]
 
-Il tuo amico ha un problema! Clona il repo che si trova in `../friend`, crea un branch chiamato "solution" e risolvi il problema in quel branch. Quando sei pronto, fai una "Pull Request" usando `git tag pr`.
+Il tuo amico ha un problema! Clona il repo che si trova in `../friend`, crea un branch chiamato "soluzione" e risolvi il problema in quel branch. Quando sei pronto, fai una "Pull Request" usando `git tag pr`.
 
 
 [setup]
@@ -14,11 +14,11 @@ rm -rf .git
 
 echo "2 + 3 = " > documento
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 
 [actions friend]
 
-git ls-remote yours | grep pr && git fetch yours && git merge yours/solution
+git ls-remote yours | grep pr && git fetch yours && git merge yours/soluzione
 git show main:documento | grep 5 && hint "Grazie!"
 
 [win friend]

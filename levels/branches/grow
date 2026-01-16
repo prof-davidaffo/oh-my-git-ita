@@ -19,17 +19,17 @@ E per viaggiare all'ultimo commit, digita `git checkout --detach name_of_the_bra
 
 echo "Impacchetti il regalo di compleanno e prendi il biglietto del concerto." > io
 git add .
-git commit -m "Evening preparations"
+git commit -m "Preparativi serali"
 echo "Vai alla festa di compleanno!" >> io
 git add .
-git commit -m "Go to the birthday"
-git branch birthday
+git commit -m "Vai al compleanno"
+git branch compleanno
 
 git checkout HEAD~1
 echo "Vai al concerto!" > io
 git add .
-git commit -m "Go to the concert"
-git branch concert
+git commit -m "Vai al concerto"
+git branch concerto
 
 git checkout HEAD~1
 
@@ -39,11 +39,11 @@ git branch -D main
 
 # Viaggia direttamente all'ultimo commit giallo della linea temporale del compleanno, fai una modifica a 'io' e fai un commit
 for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch-all-objects | grep 'commit$' | cut -f1 -d' '); do
-    if test $(git rev-parse $commit^) = $(git rev-parse birthday); then
+    if test $(git rev-parse $commit^) = $(git rev-parse compleanno); then
         return 0
     fi
 done
 return 1
 
-# Viaggia al branch blu 'concert', fai una modifica a 'io' e un commit.
-git show concert^ | grep "Vai al concerto"
+# Viaggia al branch blu 'concerto', fai una modifica a 'io' e un commit.
+git show concerto^ | grep "Vai al concerto"

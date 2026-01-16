@@ -13,7 +13,7 @@ rm -rf .git
 
 echo ciao > documento
 git add .
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 
 [win friend]
 

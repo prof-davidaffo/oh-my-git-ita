@@ -15,12 +15,12 @@ Puoi manipolare solo le cose nella tua macchina del tempo (quella in basso).
 
 echo "Mi sono appena svegliato. Ho fame." > sam
 git add .
-git commit -m "The beginning"
+git commit -m "L'inizio"
 
-git checkout -b pancakes
+git checkout -b frittelle
 echo "Ho fatto colazione con pancake ai mirtilli e sciroppo d'acero." > sam
 git add .
-git commit -m "Pancakes!"
+git commit -m "Frittelle!"
 
 git checkout -b muesli main
 echo "Ho fatto colazione con muesli d'avena e fragole." > sam
@@ -29,17 +29,17 @@ git commit -m "Muesli!"
 
 git checkout main
 
-git push -u sidekick main pancakes muesli
+git push -u sidekick main frittelle muesli
 
 [setup sidekick]
 
 git checkout main
-git merge pancakes
+git merge frittelle
 git merge muesli
 
 echo "Ho fatto colazione con pancake alle fragole." > sam
 git add .
-git commit -m "Let's make this breakfast compromise" --author="Sidekick <sidekick@example.com>"
+git commit -m "Facciamo un compromesso per la colazione" --author="Sidekick <sidekick@example.com>"
 
 [win sidekick]
 

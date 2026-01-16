@@ -11,7 +11,7 @@ Aggiungilo al file .gitignore e prova a usare `git add .`!
 touch .gitignore
 echo importante > importante
 git add importante
-git commit -m "Initial commit"
+git commit -m "Commit iniziale"
 
 [actions]
 

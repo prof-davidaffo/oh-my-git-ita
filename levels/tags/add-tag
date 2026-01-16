@@ -25,17 +25,17 @@ suggerimento3
 echo "evento 1" > feature-list
 
 git add .
-git commit -m "Adding feature 1"
+git commit -m "Aggiungo funzionalita' 1"
 
 echo "evento 2" >> feature-list
 
 git add .
-git commit -m "Adding feature 2"
+git commit -m "Aggiungo funzionalita' 2"
 
 echo "evento 3" >> feature-list
 
 git add .
-git commit -m "Adding feature 3"
+git commit -m "Aggiungo funzionalita' 3"
 
 git checkout --detach main
 

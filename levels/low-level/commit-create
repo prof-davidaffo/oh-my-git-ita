@@ -6,7 +6,7 @@ Sarebbe bello poter ricordare quando quello stato e' esistito e chi l'ha creato,
 
 Entrano in scena i commit. Sono oggetti che puntano a un tree e contengono alcuni metadati aggiuntivi. Puoi creare un commit usando
 
-    git commit-tree <tree> -m "Description of your commit"
+    git commit-tree <tree> -m "Descrizione del tuo commit"
 
 Fai un commit dal tree in questo repository!
 
@@ -28,7 +28,7 @@ git write-tree
 rm file_vuoto
 git update-index --remove file_vuoto
 
-git commit-tree 3185 -m 'Clever commit message'
+git commit-tree 3185 -m 'Messaggio di commit intelligente'
 
 [win]
 

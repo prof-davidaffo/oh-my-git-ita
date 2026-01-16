@@ -8,7 +8,7 @@ Nessun problema! Puoi taggare anche commit piu' vecchi con
 
     git tag <tag-name> <commit-hash>
     
-Tagga il commit "Adding feature 2" con il nome "v1"!
+Tagga il commit "Aggiungo funzionalita' 2" con il nome "v1"!
 
 ---
 suggerimento1
@@ -22,17 +22,17 @@ suggerimento3
 echo "evento 1" > feature-list
 
 git add .
-git commit -m "Adding feature 1"
+git commit -m "Aggiungo funzionalita' 1"
 
 echo "evento 2" >> feature-list
 
 git add .
-git commit -m "Adding feature 2"
+git commit -m "Aggiungo funzionalita' 2"
 
 echo "evento 3" >> feature-list
 
 git add .
-git commit -m "Adding feature 3"
+git commit -m "Aggiungo funzionalita' 3"
 
 git checkout --detach main
 
