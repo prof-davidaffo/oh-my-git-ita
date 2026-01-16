@@ -1,4 +1,4 @@
-name = "oh-my-git"
+name = "oh-my-git-ita"
 
 all: linux macos windows
 
