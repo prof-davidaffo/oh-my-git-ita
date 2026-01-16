@@ -16,7 +16,7 @@ Crea tre nuovi blob!
 
 Suggerimento: puoi anche usare un comando come questo per creare un blob in una sola riga:
 
-    echo "awesome content" | git hash-object -w --stdin
+    echo "contenuto fantastico" | git hash-object -w --stdin
 
 Hai gia' notato che puoi trascinare tutti gli oggetti? :)
 
@@ -24,9 +24,9 @@ Hai gia' notato che puoi trascinare tutti gli oggetti? :)
 
 [setup goal]
 
-echo "Hi" > file1
-echo "Ho" > file2
-echo "Hu" > file3
+echo "Ciao" > file1
+echo "Cio" > file2
+echo "Ciu" > file3
 git hash-object -w file1
 git hash-object -w file2
 git hash-object -w file3

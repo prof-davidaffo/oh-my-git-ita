@@ -18,9 +18,9 @@ Per ragioni tecniche, in questo prototipo non puoi ancora usare `cd`. Ma non ci 
 [setup]
 
 mkdir riddle
-echo "ppl p" > riddle/consonants
-echo "ae ie" > riddle/vowels
+echo "trt d ml" > riddle/consonants
+echo "oa iee" > riddle/vowels
 
 [win]
 
-cat answer | grep -i "apple \\?pie"
+cat answer | grep -i "torta \\?di \\?mele"

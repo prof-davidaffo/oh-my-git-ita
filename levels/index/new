@@ -17,12 +17,12 @@ Puoi usare il completamento con tab nel terminale! Inizia a digitare un nome di 
 
 [setup]
 
-echo "The candle is burning with a blue flame." > candle
+echo "La candela brucia con una fiamma blu." > candle
 
 [win]
 
-# Add the candle.
+# Aggiungi la candela.
 test "$(git diff --cached --name-only)" = "candle" || file -f .git/candle-added && touch .git/candle-added
 
-# Make a commit.
+# Fai un commit.
 test "$(git ls-tree --name-only HEAD)" = "candle"

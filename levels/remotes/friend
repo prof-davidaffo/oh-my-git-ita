@@ -9,7 +9,7 @@ Fate a turno finche' non avete cinque righe!
 
 [setup yours]
 
-echo "Line 1" > essay
+echo "Riga 1" > essay
 git add .
 git commit -m "One line"
 
@@ -18,30 +18,30 @@ git push -u friend main
 [setup friend]
 
 git checkout main
-echo "Line 2, gnihihi" >> essay
+echo "Riga 2, gnihihi" >> essay
 git commit -am "Another line"
 
 [actions friend]
 
 if test "$(git log --oneline | wc -l)" -eq 3; then
-    git reset --hard main # Necessary because the working directory isn't updated when we push to the friend.
-    echo "Line 4, blurbblubb" >> essay
+    git reset --hard main # Necessario perche' la working directory non si aggiorna quando facciamo push al friend.
+    echo "Riga 4, blurbblubb" >> essay
     git commit -am "Final line"
     hint "Oh bello, ho aggiunto una quarta riga!"
 fi
 
 [win]
 
-# Got the second line from your friend
+# Hai ricevuto la seconda riga dal tuo amico
 git show HEAD:essay | grep gnihihi
 
-# Got the fourth line from your friend.
+# Hai ricevuto la quarta riga dal tuo amico.
 git show HEAD:essay | grep blurbblubb
 
 [win friend]
 
-# The friend got a third line from you
+# L'amico ha ricevuto la terza riga da te
 test "$(git show HEAD:essay | wc -l)" -ge 3
 
-# The friend got a fifth line from you
+# L'amico ha ricevuto la quinta riga da te
 test "$(git show HEAD:essay | wc -l)" -ge 5

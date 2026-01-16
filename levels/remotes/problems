@@ -7,27 +7,27 @@ Sia tu sia il tuo amico avete lavorato sul file e volete sincronizzarvi!
 
 [setup yours]
 
-echo "The bike shed should be ???" > file
+echo "La rimessa delle bici dovrebbe essere ???" > file
 git add .
 git commit -m "initial"
 
 git push -u friend main
 
-echo "The bike shed should be green" > file
+echo "La rimessa delle bici dovrebbe essere verde" > file
 
 [setup friend]
 
 git checkout main
 
-echo "The bike shed should be blue" > file
+echo "La rimessa delle bici dovrebbe essere blu" > file
 git commit -a -m "friends version"
 
 [win]
 
-# Commit your local changes.
+# Fai il commit delle modifiche locali.
 test "$(git status -s)" = ""
 
 [win friend]
 
-# Look at your friend's suggestion, make a compromise, and push it back.
+# Guarda la proposta del tuo amico, trova un compromesso e pushalo indietro.
 git rev-parse main^ && test "$(git rev-parse main^1^)" = "$(git rev-parse main^2^)"

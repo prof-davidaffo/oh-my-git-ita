@@ -6,7 +6,7 @@ Crea due tree che puntano allo stesso blob!
 
 [setup goal]
 
-BLOB=$(echo "I am precious" | git hash-object -w --stdin)
+BLOB=$(echo "Sono prezioso" | git hash-object -w --stdin)
 git update-index --add --cacheinfo 100644,$BLOB,a
 git write-tree
 git update-index --force-remove a

@@ -11,63 +11,63 @@ Di nuovo, vogliamo farne la nostra realta' di base: il branch "main" deve puntar
 
 [setup]
 
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 
 git add .
 git commit -m "The Beginning"
 
 git checkout -b baguette main
-echo "You have a baguette.
+echo "Hai una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You buy a baguette"
 
-echo "You ate a baguette.
+echo "Hai mangiato una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You eat the baguette"
 
 git checkout -b coffee main
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You have coffee.
+Hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You buy some coffee"
 
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You drank coffee.
+Hai bevuto il caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You drink the coffee"
 
 git checkout -b donut main
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You have a donut." > you
+Hai una ciambella." > you
 git add .
 git commit -m "You buy a donut"
 
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You ate a donut." > you
+Hai mangiato una ciambella." > you
 git add .
 git commit -m "You eat the donut"
 
@@ -77,7 +77,7 @@ git checkout --detach main
 [win]
 
 # Riordina tutti e tre i branch in uno solo e sposta il riferimento del branch main
-{ git show main:you | grep "You ate.*baguette"; } && { git show main:you | grep "You drank.*coffee"; } && { git show main:you | grep "You ate.*donut"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
+{ git show main:you | grep "Hai mangiato.*baguette"; } && { git show main:you | grep "Hai bevuto.*caffe'"; } && { git show main:you | grep "Hai mangiato.*ciambella"; } && { test "$(git log main --oneline | wc -l)" -eq 7; }
 
 [congrats]
 

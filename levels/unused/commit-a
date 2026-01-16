@@ -22,5 +22,5 @@ echo x > c
 
 [win]
 
-# Make a commit where all files contain "x".
+# Fai un commit in cui tutti i file contengono "x".
 test "$(git show main:a)" = x && test "$(git show main:b)" = x && test "$(git show main:c)" = x

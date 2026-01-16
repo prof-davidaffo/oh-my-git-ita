@@ -15,18 +15,18 @@ Questo e' del tutto opzionale! Ma e' una abilita' utilissima nel mondo reale - e
 
 [setup]
 
-echo "The glass is full of water." > glass
+echo "Il bicchiere e' pieno d'acqua." > glass
 
 [win]
 
-# Make a snapshot of the glass (a "commit")
+# Fai un'istantanea del bicchiere (un "commit")
 git rev-parse HEAD
 
-# Change the contents of the glass!
-! test "$(cat glass)" = "The glass is full of water."
+# Cambia il contenuto del bicchiere!
+! test "$(cat glass)" = "Il bicchiere e' pieno d'acqua."
 
-# And make a second commit!
-git rev-parse HEAD^ && ! test "$(git show main:glass)" = "The glass is full of water."
+# E fai un secondo commit!
+git rev-parse HEAD^ && ! test "$(git show main:glass)" = "Il bicchiere e' pieno d'acqua."
 
 [congrats]
 

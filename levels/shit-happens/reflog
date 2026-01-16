@@ -22,5 +22,5 @@ git checkout main
 
 [win]
 
-# Find out where you've been before, and go back there!
+# Scopri dove sei stato prima e torna li'!
 test "$(git rev-parse HEAD)" = "$(git rev-parse 3)"

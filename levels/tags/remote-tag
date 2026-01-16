@@ -23,11 +23,11 @@ Aggiungi un tag chiamato "v2" all'ultimo commit e pushalo sul remote. Inoltre fa
 git checkout main
 
 git checkout main
-echo "toothbrush sharing" > project-ideas
+echo "condivisione dello spazzolino" > project-ideas
 git add .
 git commit -m "First idea"
 
-echo "Is my phone upside down? App" >> project-ideas
+echo "Il mio telefono e' capovolto? App" >> project-ideas
 git commit -am "Another idea"
 
 
@@ -45,14 +45,14 @@ git branch -u friend/main main
 git tag v1 HEAD~1
 
 [win]
-# v1 tag in your repo
+# tag v1 nel tuo repo
 test "$(git show v1 -s --format=%h)" = "$(git show HEAD~1 -s --format=%h)"
 
-# v2 tag in your repo
+# tag v2 nel tuo repo
 test "$(git show v2 -s --format=%h)" = "$(git show HEAD -s --format=%h)"
 
 
 [win friend]
 
-# v2 tag in the remote
+# tag v2 nel remote
 test "$(git show v2 -s --format=%h)" = "$(git show HEAD -s --format=%h)"

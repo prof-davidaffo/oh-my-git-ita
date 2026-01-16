@@ -9,13 +9,13 @@ Cosa e' successo qui? Fai due commit dalle modifiche (usando la carta "add"), in
 
 [setup]
 
-echo something > file1
-echo something else > file2
+echo qualcosa > file1
+echo qualcos'altro > file2
 git add .
 git commit -m "Initial commit"
 
-echo this should happen first >> file1
-echo and this should happen after that >> file2
+echo questo dovrebbe succedere prima >> file1
+echo e questo dovrebbe succedere dopo >> file2
 
 [win]
 

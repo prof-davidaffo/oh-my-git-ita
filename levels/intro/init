@@ -15,7 +15,7 @@ rm -rf .git
 
 [win]
 
-# Initialize the time machine!
+# Inizializza la macchina del tempo!
 test -d .git
 
 [congrats]

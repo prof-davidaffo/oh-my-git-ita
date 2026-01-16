@@ -18,31 +18,31 @@ suggerimento3
 
 [setup]
 
-echo "Apple Pie:" > recipe
+echo "Torta di mele:" > recipe
 
 git add .
 git commit -m "creating a recipe"
 
-echo "- 4 Apples" >> recipe
+echo "- 4 mele" >> recipe
 
 git add .
 git commit -m "Adding ingredients"
 
-echo "- 500g Flour" >> recipe
+echo "- 500g di farina" >> recipe
 
 git stash push
 
-echo "- Pinch of Salt" >> recipe
+echo "- Un pizzico di sale" >> recipe
 
 git checkout main
 git add recipe
 
 [win]
 
-# Did you resolve the conflict and commit?
-{ git show HEAD | grep "Flour"; } && { git show HEAD | grep "Salt"; }
+# Hai risolto il conflitto e fatto il commit?
+{ git show HEAD | grep "farina"; } && { git show HEAD | grep "sale"; }
 
-# Did you clear stash stack?
+# Hai svuotato lo stack dello stash?
 test "$(git stash list | wc -l)" -eq 0
 
 [actions]

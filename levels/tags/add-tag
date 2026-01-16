@@ -22,17 +22,17 @@ suggerimento3
 
 [setup]
 
-echo "event 1" > feature-list
+echo "evento 1" > feature-list
 
 git add .
 git commit -m "Adding feature 1"
 
-echo "event 2" >> feature-list
+echo "evento 2" >> feature-list
 
 git add .
 git commit -m "Adding feature 2"
 
-echo "event 3" >> feature-list
+echo "evento 3" >> feature-list
 
 git add .
 git commit -m "Adding feature 3"
@@ -41,7 +41,7 @@ git checkout --detach main
 
 [win]
 
-# Did you create a new tag?
+# Hai creato un nuovo tag?
 test "$(git tag -l | wc -l)" -ge 1
 
 [actions]

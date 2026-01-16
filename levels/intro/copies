@@ -38,5 +38,5 @@ cp form2_final.txt form2_really_final.txt
 
 [win]
 
-# Add another line to form2_really_final.txt!
+# Aggiungi un'altra riga a form2_really_final.txt!
 test "$(cat form2_really_final.txt | wc -l )" -ge 5

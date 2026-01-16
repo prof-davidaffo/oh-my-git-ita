@@ -15,18 +15,18 @@ Questo inserira' l'identificatore univoco del commit!
 
 [setup]
 
-echo "This piggy bank belongs to the big sister.
-It contains 10 coins." > piggy_bank
+echo "Questo salvadanaio appartiene alla sorella maggiore.
+Contiene 10 monete." > piggy_bank
 git add .
 git commit -m "The beginning"
 
-echo "A young girl with brown, curly hair." > little_sister
+echo "Una ragazza con capelli castani e ricci." > little_sister
 git add .
 git commit -m "Little sister comes in"
 
-echo "Has 10 coins." >> little_sister
-echo "This piggy bank belongs to the big sister.
-It is empty." > piggy_bank
+echo "Ha 10 monete." >> little_sister
+echo "Questo salvadanaio appartiene alla sorella maggiore.
+E' vuoto." > piggy_bank
 git add .
 git commit -m "Little sister does something"
 
@@ -35,8 +35,8 @@ git branch -df main
 
 [win]
 
-# Restore sisterly peace.
-{ git show HEAD:piggy_bank | grep "10 coins"; } && { test $(git show HEAD:little_sister | wc -l) -eq $(git show HEAD:little_sister | grep -v "10 coins" | wc -l); } && { git rev-parse HEAD^^^; }
+# Ripristina la pace tra sorelle.
+{ git show HEAD:piggy_bank | grep "10 monete"; } && { test $(git show HEAD:little_sister | wc -l) -eq $(git show HEAD:little_sister | grep -v "10 monete" | wc -l); } && { git rev-parse HEAD^^^; }
 
 [congrats]
 

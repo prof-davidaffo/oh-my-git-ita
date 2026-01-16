@@ -12,8 +12,8 @@ Prova a leggere alcuni tree di questo repository nell'index!
 
 EMPTY_TREE=$(git write-tree)
 
-echo "file 1" > file1
-echo "file 2" > file2
+echo "file uno" > file1
+echo "file due" > file2
 git add .
 git write-tree
 
@@ -30,8 +30,8 @@ git read-tree "$EMPTY_TREE"
 
 EMPTY_TREE=$(git write-tree)
 
-echo "file 1" > file1
-echo "file 2" > file2
+echo "file uno" > file1
+echo "file due" > file2
 git add .
 git write-tree
 

@@ -15,15 +15,15 @@ Dopo aver trovato l'ultimo commit buono, resetta il branch main a quel punto. Co
 
 [setup]
 
-echo "You still have your key." > you
+echo "Hai ancora la tua chiave." > you
 
 for i in {1..30}; do
     if test $i -eq 12; then
-        echo "Your pocket is empty." > you
-        echo "Is on the ground." > key
+        echo "La tua tasca e' vuota." > you
+        echo "E' per terra." > key
     fi
     if test $i -eq 13; then
-        echo "Is holding a key in its beak." > bird
+        echo "Tiene una chiave nel becco." > bird
         rm key
     fi
     if test $i -eq 14; then
@@ -35,7 +35,7 @@ done
 
 [win]
 
-# Find the last good commit
+# Trova l'ultimo commit buono
 test "$(git log --pretty=%s main | head -1)" -eq 11
 
 [congrats]

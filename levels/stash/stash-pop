@@ -17,24 +17,24 @@ suggerimento3
 
 [setup]
 
-echo "Apple Pie:" > recipe
+echo "Torta di mele:" > recipe
 
 git add .
 git commit -m "creating a recipe"
 
-echo "- 4 Apples" >> recipe
+echo "- 4 mele" >> recipe
 
 git add .
 git commit -m "Adding ingredients"
 
-echo "- 500g Flour" >> recipe
+echo "- 500g di farina" >> recipe
 
 git stash push
 git checkout main
 
 [win]
 
-# Did you pop the changes from the stash stack?
+# Hai fatto pop delle modifiche dallo stack dello stash?
 test "$(git stash list | wc -l)" -eq 0
 
 [actions]

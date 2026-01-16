@@ -12,8 +12,8 @@ Crea ref che puntano a tutti gli oggetti in questo repository!
 
 [setup]
 
-echo hello > hello
-echo world > world
+echo ciao > hello
+echo mondo > world
 BLOB1=$(git hash-object -w hello)
 BLOB2=$(git hash-object -w world)
 git add .
@@ -22,8 +22,8 @@ COMMIT=$(git commit-tree $TREE -m "Initial commit")
 
 [setup goal]
 
-echo hello > hello
-echo world > world
+echo ciao > hello
+echo mondo > world
 BLOB1=$(git hash-object -w hello)
 BLOB2=$(git hash-object -w world)
 git add .

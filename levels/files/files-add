@@ -14,15 +14,15 @@ Non dimenticare di aggiungere un colore e una descrizione anche ai tuoi nuovi mo
 
 [setup]
 
-echo A yellow cozy bed. > bed
+echo Un letto accogliente yellow. > bed
 
 [win]
 
-# Add two more pieces of furniture
+# Aggiungi altri due mobili
 NUM_FILES="$(ls | wc -l)"
 test "$NUM_FILES" -ge 3
 
-# Make sure the colors match your bed's color.
+# Assicurati che i colori combacino con quello del letto.
 NUM_FILES="$(ls | wc -l)"
 YELLOW_FILES="$(grep -li yellow * | wc -l)"
 test "$NUM_FILES" -ge 2 && test "$YELLOW_FILES" = "$NUM_FILES"

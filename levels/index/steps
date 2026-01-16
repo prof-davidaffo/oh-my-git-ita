@@ -7,22 +7,22 @@ L'index e' davvero utile, perche' ci permette di essere precisi su quali modific
 
 [setup]
 
-echo "A hammer, balancing on its handle." > hammer
-echo "A bottle, containing a clear liquid." > bottle
-echo "A white sugar cube." > sugar_cube
+echo "Un martello in equilibrio sul manico." > hammer
+echo "Una bottiglia con un liquido trasparente." > bottle
+echo "Una zolletta di zucchero bianca." > sugar_cube
 
 git add .
 git commit -m "The beginning"
 
 [win]
 
-# Make changes to all three objects, to form a logical sequence of events!
+# Fai modifiche a tutti e tre gli oggetti, per creare una sequenza logica di eventi!
 test "$(git diff --name-only | wc -l)" -eq 3 || file -f .git/candle-changed && touch .git/candle-changed
 
-# Only add one of these changes!
+# Aggiungi solo una di queste modifiche!
 test "$(git diff --cached --name-only | wc -l)" -eq 1 || file -f .git/candle-added && touch .git/candle-added
 
-# And make a commit.
+# E fai un commit.
 COUNT=0
 for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch-all-objects | grep 'commit$' | cut -f1 -d' '); do
     if test "$(git diff --name-only $commit $commit^ | wc -l)" -eq 1; then
@@ -32,7 +32,7 @@ done
 
 test "$COUNT" -ge 1
 
-# Make a second commit that only records a single change.
+# Fai un secondo commit che registri solo una modifica.
 COUNT=0
 for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch-all-objects | grep 'commit$' | cut -f1 -d' '); do
     if test "$(git diff --name-only $commit $commit^ | wc -l)" -eq 1; then
@@ -42,7 +42,7 @@ done
 
 test "$COUNT" -ge 2
 
-# And a third one.
+# E un terzo commit.
 COUNT=0
 for commit in $(git cat-file --batch-check='%(objectname) %(objecttype)' --batch-all-objects | grep 'commit$' | cut -f1 -d' '); do
     if test "$(git diff --name-only $commit $commit^ | wc -l)" -eq 1; then

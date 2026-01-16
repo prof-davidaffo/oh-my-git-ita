@@ -27,5 +27,5 @@ blaaaargh" > essay.txt
 
 [win]
 
-# Restore the version from the last commit.
+# Ripristina la versione dell'ultimo commit.
 cat essay.txt | grep D

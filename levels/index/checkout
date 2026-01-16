@@ -21,5 +21,5 @@ git add c
 
 [win]
 
-# Remove all changes in your local files!
+# Rimuovi tutte le modifiche nei file locali!
 test "$(git diff --name-only | wc -l)" -eq 0

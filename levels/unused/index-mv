@@ -22,5 +22,5 @@ git add b
 
 [win]
 
-# Make a commit where you rename the file b to "x".
+# Fai un commit in cui rinomini il file b in "x".
 test "$(git ls-tree --name-only main)" = "$(echo -e "a\nc\nx")"

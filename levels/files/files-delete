@@ -16,19 +16,19 @@ Nella riga di comando puoi eliminare facilmente tutti i file che finiscono per -
 
 [setup]
 
-echo A tiny spider web is next to your window. > tiny_web
-echo A big spider web sticks above your bed. > big_web
-echo A cozy bed. > bed
-echo An extra thick spider web is right beside your door. > thick_web
+echo Una piccola ragnatela e' vicino alla finestra. > tiny_web
+echo Una grande ragnatela pende sopra il letto. > big_web
+echo Un letto accogliente. > bed
+echo Una ragnatela molto spessa e' proprio accanto alla porta. > thick_web
 
 [win]
 
-# Remove all spider webs.
+# Rimuovi tutte le ragnatele.
 ! ls | grep thick_web &&
 ! ls | grep big_web &&
 ! ls | grep tiny_web
 
-# But make sure you keep your bed!
+# Ma assicurati di tenere il letto!
 ls | grep bed
 
 [congrats]

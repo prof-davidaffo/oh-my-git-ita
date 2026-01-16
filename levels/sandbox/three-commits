@@ -3,14 +3,14 @@ cards = checkout add reset-file checkout-file commit merge rebase
 
 [setup]
 
-echo "You wake up." > you
+echo "Ti svegli." > you
 git add .
 git commit -m "The beginning"
 
-echo "You drink coffee." >> you
+echo "Bevi un caffe'." >> you
 git commit -am "First things first"
 
-echo "You hear a knock on the door." >> you
+echo "Senti bussare alla porta." >> you
 git commit -am "Who's there?"
 
 git branch not_main

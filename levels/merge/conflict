@@ -13,33 +13,33 @@ Fai in modo che la linea temporale finale sia la "main".
 
 [setup]
 
-echo "Just woke up. Is hungry." > sam
+echo "Mi sono appena svegliato. Ho fame." > sam
 git add .
 git commit -m "The beginning"
 
 git checkout -b pancakes
-echo "Had blueberry pancakes with maple syrup for breakfast." > sam
+echo "Ho fatto colazione con pancake ai mirtilli e sciroppo d'acero." > sam
 git add .
 git commit -m "Pancakes!"
 
 echo "
-Is at work." >> sam
+Sono al lavoro." >> sam
 git commit -am "Go to work"
 
 git checkout -b muesli main
-echo "Had muesli with oats and strawberries for breakfast." > sam
+echo "Ho fatto colazione con muesli d'avena e fragole." > sam
 git add .
 git commit -m "Muesli!"
 
 echo "
-Is at work." >> sam
+Sono al lavoro." >> sam
 git commit -am "Go to work"
 
 git checkout main
 
 [win]
 
-# Make a breakfast compromise in the 'main' branch.
+# Trova un compromesso per la colazione nel branch 'main'.
 git rev-parse main^ && test "$(git rev-parse main^1^^)" = "$(git rev-parse main^2^^)"
 
 [congrats]

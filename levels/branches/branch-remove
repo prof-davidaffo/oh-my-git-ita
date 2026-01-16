@@ -39,7 +39,7 @@ git checkout leap^^
 
 [win]
 
-# Find the bad branches and delete them. Keep only the best one.
+# Trova i branch sbagliati ed eliminali. Tieni solo il migliore.
 test "$(git show-ref --heads | cut -f2 -d' ')" = "$(echo refs/heads/leap)"
 
 [congrats]

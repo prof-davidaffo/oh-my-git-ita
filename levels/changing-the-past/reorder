@@ -11,67 +11,67 @@ Oppure puoi resettare il tag main al primissimo commit, e poi fare cherry-pick d
 
 [setup]
 
-echo "You just woke up.
+echo "Ti sei appena svegliato.
 
-You are NOT wearing underwear.
+NON indossi le mutande.
 
-You are NOT wearing pants.
+NON indossi i pantaloni.
 
-You are NOT wearing a shirt.
+NON indossi una maglia.
 
-You are NOT wearing shoes." > you
+NON indossi le scarpe." > you
 git add .
 
 git commit -m "The Beginning"
 
-echo "You just woke up.
+echo "Ti sei appena svegliato.
 
-You are NOT wearing underwear.
+NON indossi le mutande.
 
-You are NOT wearing pants.
+NON indossi i pantaloni.
 
-You are NOT wearing a shirt.
+NON indossi una maglia.
 
-You are wearing shoes." > you
+Indossi le scarpe." > you
 git commit -am "Put on shoes"
 
-echo "You just woke up.
+echo "Ti sei appena svegliato.
 
-You are NOT wearing underwear.
+NON indossi le mutande.
 
-You are wearing pants.
+Indossi i pantaloni.
 
-You are NOT wearing a shirt.
+NON indossi una maglia.
 
-You are wearing shoes." > you
+Indossi le scarpe." > you
 git commit -am "Put on pants"
 
-echo "You just woke up.
+echo "Ti sei appena svegliato.
 
-You are wearing underwear.
+Indossi le mutande.
 
-You are wearing pants.
+Indossi i pantaloni.
 
-You are NOT wearing a shirt.
+NON indossi una maglia.
 
-You are wearing shoes." > you
+Indossi le scarpe." > you
 git commit -am "Put on underwear"
 
-echo "You just woke up.
+echo "Ti sei appena svegliato.
 
-You are wearing underwear.
+Indossi le mutande.
 
-You are wearing pants.
+Indossi i pantaloni.
 
-You are wearing a shirt.
+Indossi una maglia.
 
-You are wearing shoes." > you
+Indossi le scarpe." > you
 git commit -am "Put on shirt"
 
 [win]
 
-# Reorder the commits to dress yourself in the correct way
-{ git log main --oneline | perl -0777 -ne'exit(1) if not /shoes[\s\S]*pants[\s\S]*underwear/'; } && { test "$(git log main --oneline | wc -l)" -eq 5; }
+# Riordina i commit per vestirti nel modo corretto
+{ git log main --oneline | perl -0777 -ne'exit(1) if not /scarpe[\s\S]*pantaloni[\s\S]*mutande/'; } && { test "$(git log main --oneline | wc -l)" -eq 5; }
 
 [congrats]
 

@@ -19,12 +19,12 @@ git commit -m "Initial commit"
 
 [win]
 
-# Make changes to all files!
+# Fai modifiche a tutti i file!
 test "$(cat a)" != "a" &&
 test "$(cat b)" != "b" &&
 test "$(cat c)" != "c"
 
-# Add only the changes of a and c, and make a commit! Finally, make a commit which captures the changes in b!
+# Aggiungi solo le modifiche di a e c e fai un commit! Infine fai un commit che includa le modifiche di b!
 
 test "$(git show main:a)" != "a" &&
 test "$(git show main:b)" != "b" &&

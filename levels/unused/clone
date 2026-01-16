@@ -11,10 +11,10 @@ rm -rf .git
 
 [setup friend]
 
-echo hi > file
+echo ciao > file
 git add .
 git commit -m "Initial commit"
 
 [win friend]
 
-test "$(git show main:file)" != hi
+test "$(git show main:file)" != ciao

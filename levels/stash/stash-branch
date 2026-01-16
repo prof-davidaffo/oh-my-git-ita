@@ -19,24 +19,24 @@ suggerimento3
 
 [setup]
 
-echo "Apple Pie:" > recipe
+echo "Torta di mele:" > recipe
 
 git add .
 git commit -m "creating a recipe"
 
-echo "- 4 Apples" >> recipe
+echo "- 4 mele" >> recipe
 
 git add .
 git commit -m "Adding ingredients"
 
-echo "- 500g Flour" >> recipe
+echo "- 500g di farina" >> recipe
 git stash push
 
 git checkout main
 
 [win]
 
-# Did you create a new branch from the stashed changes?
+# Hai creato un nuovo branch dalle modifiche nello stash?
 test "$(git branch --list| wc -l)" -ge 2
 
 [actions]

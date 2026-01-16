@@ -11,25 +11,25 @@ Poi fai un nuovo commit sopra l'originale che introduca un compromesso.
 
 [setup]
 
-echo "The bikeshed should be ???" > proposal
+echo "La rimessa delle bici dovrebbe essere ???" > proposal
 git add .
 git commit -m "What do you think?"
 
 [setup friend1]
 
 git pull yours main
-echo "The bikeshed should be green" > proposal
+echo "La rimessa delle bici dovrebbe essere verde" > proposal
 git commit -am "Green"
 
 [setup friend2]
 
 git pull yours main
-echo "The bikeshed should be blue" > proposal
+echo "La rimessa delle bici dovrebbe essere blu" > proposal
 git commit -am "Blue"
 
 [win]
 
-# Your proposal is acceptable for friend1.
+# La tua proposta va bene per friend1.
 git show main:proposal | git grep green
-# Your proposal is acceptable for friend2.
+# La tua proposta va bene per friend2.
 git show main:proposal | git grep blue

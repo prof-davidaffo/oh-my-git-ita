@@ -14,9 +14,9 @@ In alternativa, puoi anche cliccare il pulsante "Ricarica" per riavviare un live
 
 [setup]
 
-echo "My master password is a1b2c3d4e5" | git hash-object -w --stdin
-echo "This blob really should not exist" | git hash-object -w --stdin
-echo "This is a virus" | git hash-object -w --stdin
+echo "La mia password principale e' a1b2c3d4e5" | git hash-object -w --stdin
+echo "Questo blob non dovrebbe esistere" | git hash-object -w --stdin
+echo "Questo e' un virus" | git hash-object -w --stdin
 
 [setup goal]
 

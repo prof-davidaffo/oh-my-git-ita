@@ -8,8 +8,8 @@ Elimina tutti i ref! :P (Beh, tranne HEAD. HEAD e' speciale.)
 
 [setup]
 
-echo hello > hello
-echo world > world
+echo ciao > hello
+echo mondo > world
 BLOB1=$(git hash-object -w hello)
 BLOB2=$(git hash-object -w world)
 git add .
@@ -21,8 +21,8 @@ git update-ref refs/beautiful_commit "$COMMIT"
 
 [setup goal]
 
-echo hello > hello
-echo world > world
+echo ciao > hello
+echo mondo > world
 BLOB1=$(git hash-object -w hello)
 BLOB2=$(git hash-object -w world)
 git add .

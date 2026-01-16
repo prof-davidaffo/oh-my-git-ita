@@ -19,9 +19,9 @@ echo c > c
 
 [win]
 
-# File a contains "x" in the last main commit.
+# Il file a contiene "x" nell'ultimo commit di main.
 test "$(git show main:a)" = x
-# File b contains "x" in the last main commit.
+# Il file b contiene "x" nell'ultimo commit di main.
 test "$(git show main:b)" = x
-# File c contains "x" in the last main commit.
+# Il file c contiene "x" nell'ultimo commit di main.
 test "$(git show main:c)" = x

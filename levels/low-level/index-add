@@ -6,7 +6,7 @@ Git ha un concetto molto potente per memorizzare metadati legati ai blob: l'inde
 
 L'opzione piu' comoda per aggiungere una voce all'index e' usare un file esistente:
 
-    echo "my content" > file
+    echo "il mio contenuto" > file
     git update-index --add file
 
 Aggiungi tre voci all'index! Come sfida extra: riesci ad aggiungere un file che e' dentro una directory, come "directory/file"?
@@ -27,9 +27,9 @@ Puoi inserire l'hash di un oggetto nel terminale cliccandoci con il tasto destro
 
 [setup goal]
 
-echo "file 1" > file1
-echo "file 2" > file2
-echo "file 3" > file3
+echo "file uno" > file1
+echo "file due" > file2
+echo "file tre" > file3
 git add .
 
 [win]

@@ -19,55 +19,55 @@ Il branch donut e' nel posto giusto, ma la linea temporale e' ancora incompleta:
 
 [setup]
 
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 
 git add .
 git commit -m "The Beginning"
 
 git checkout -b coffee
-echo "You have a baguette.
+echo "Hai una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You buy a baguette"
 
-echo "You ate a baguette.
+echo "Hai mangiato una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You eat the baguette"
 
 git checkout -b baguette main
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You have coffee.
+Hai caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You buy some coffee"
 
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You drank coffee.
+Hai bevuto il caffe'.
 
-You do not have a donut." > you
+Non hai una ciambella." > you
 git add .
 git commit -m "You drink the coffee"
 
 git checkout -b donut main
-echo "You do not have a baguette.
+echo "Non hai una baguette.
 
-You do not have coffee.
+Non hai caffe'.
 
-You have a donut." > you
+Hai una ciambella." > you
 git add .
 git commit -m "You buy a donut"
 
@@ -75,14 +75,14 @@ git checkout --detach main
 
 [win]
 
-# Did you eat a baguette on the baguette branch?
-git show baguette:you | grep "You ate.*baguette"
+# Hai mangiato una baguette sul branch baguette?
+git show baguette:you | grep "Hai mangiato.*baguette"
 
-# Did you drink a coffee on the coffee branch?
-git show coffee:you | grep "You drank.*coffee"
+# Hai bevuto un caffe' sul branch coffee?
+git show coffee:you | grep "Hai bevuto.*caffe'"
 
-# Did you eat a donut on the donut branch?
-git show donut:you | grep "You ate.*donut"
+# Hai mangiato una ciambella sul branch donut?
+git show donut:you | grep "Hai mangiato.*ciambella"
 
 [actions]
 

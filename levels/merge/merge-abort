@@ -13,12 +13,12 @@ Prova a fare il merge di entrambi i commit e poi interrompilo.
 
 [setup]
 
-echo "A new day is starting" > you
+echo "Sta iniziando un nuovo giorno" > you
 
 git add .
 git commit -m "Start"
 
-echo "Walking down the Main Lane." >> you
+echo "Cammini lungo la Via Principale." >> you
 
 git add .
 git commit -m "Main Lane"
@@ -26,7 +26,7 @@ git commit -m "Main Lane"
 
 git checkout HEAD~1
 
-echo "Walking down the Side Lane." >> you
+echo "Cammini lungo la Via Laterale." >> you
 
 git add .
 git commit -m "Side Lane"
@@ -43,10 +43,10 @@ fi
 
 [win]
 
-# You tried to merge?
+# Hai provato a fare il merge?
 test -f .git/secretfile
 
-# You aborted to merge?
+# Hai interrotto il merge?
 test -f .git/secretfile && ! test -f .git/MERGE_HEAD && ! git rev-parse HEAD^^
 
 [congrats]

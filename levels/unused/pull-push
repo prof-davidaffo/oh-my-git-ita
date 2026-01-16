@@ -13,17 +13,17 @@ Puoi manipolare solo le cose nella tua macchina del tempo (quella in basso).
 
 [setup yours]
 
-echo "Just woke up. Is hungry." > sam
+echo "Mi sono appena svegliato. Ho fame." > sam
 git add .
 git commit -m "The beginning"
 
 git checkout -b pancakes
-echo "Had blueberry pancakes with maple syrup for breakfast." > sam
+echo "Ho fatto colazione con pancake ai mirtilli e sciroppo d'acero." > sam
 git add .
 git commit -m "Pancakes!"
 
 git checkout -b muesli main
-echo "Had muesli with oats and strawberries for breakfast." > sam
+echo "Ho fatto colazione con muesli d'avena e fragole." > sam
 git add .
 git commit -m "Muesli!"
 
@@ -37,13 +37,13 @@ git checkout main
 git merge pancakes
 git merge muesli
 
-echo "Had pancakes with strawberries for breakfast." > sam
+echo "Ho fatto colazione con pancake alle fragole." > sam
 git add .
 git commit -m "Let's make this breakfast compromise" --author="Sidekick <sidekick@example.com>"
 
 [win sidekick]
 
-# Below main's parent, there is a rhombus:
+# Sotto il parent di main c'e' un rombo:
 git rev-parse main^^ && test "$(git rev-parse main^^1^)" = "$(git rev-parse main^^2^)"
 
 [congrats]

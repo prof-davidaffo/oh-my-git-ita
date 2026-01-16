@@ -20,5 +20,5 @@ git add b
 
 [win]
 
-# Make a commit where all files are deleted ¯\_(^_^)_/¯
+# Fai un commit in cui tutti i file vengono eliminati ¯\_(^_^)_/¯
 test "$(git ls-tree main | wc -l)" -eq 0

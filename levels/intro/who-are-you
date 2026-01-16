@@ -25,10 +25,10 @@ Firma: $(git config user.name)" >> form
 
 [win]
 
-# Introduce yourself.
+# Presentati.
 test "$(git config user.name)" != "You"
 
-# Fill out the enrollment form, and commit it!
+# Compila il modulo di iscrizione e fai il commit!
 git show main:form | grep '\[[xX]\]'
 
 [congrats]
