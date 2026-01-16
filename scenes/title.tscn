@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://styles/theme.tres" type="Theme" id=1]
 [ext_resource path="res://images/oh-my-git.png" type="Texture" id=2]
 [ext_resource path="res://scenes/title.gd" type="Script" id=3]
+[ext_resource path="res://images/flag.png" type="Texture" id=4]
 [ext_resource path="res://fonts/default.tres" type="DynamicFont" id=5]
 
 [node name="Title" type="Control"]
@@ -31,7 +32,8 @@ margin_right = 1209.71
 margin_bottom = 677.416
 custom_colors/font_color = Color( 0.533333, 0.392157, 0.392157, 1 )
 custom_fonts/font = ExtResource( 5 )
-text = "Colonna sonora originale di winniehell"
+text = "Colonna sonora originale di winniehell
+Traduzione italiana del Prof. Davide Daffonchio"
 align = 1
 __meta__ = {
 "_edit_use_anchors_": false
@@ -69,6 +71,11 @@ text = "Esci"
 position = Vector2( 967.924, 306.066 )
 scale = Vector2( 0.320895, 0.320895 )
 texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="Sprite"]
+position = Vector2( 1189, 186 )
+scale = Vector2( 0.205078, 0.205078 )
+texture = ExtResource( 4 )
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="levels"]
 [connection signal="pressed" from="VBoxContainer/Button3" to="." method="sandbox"]
