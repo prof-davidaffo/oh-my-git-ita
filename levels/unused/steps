@@ -10,7 +10,7 @@ Cosa e' successo qui? Fai due commit dalle modifiche (usando la carta "add"), in
 [setup]
 
 echo qualcosa > file_uno
-echo qualcos'altro > file_due
+echo "qualcos'altro" > file_due
 git add .
 git commit -m "Commit iniziale"
 

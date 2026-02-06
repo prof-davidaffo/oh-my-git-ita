@@ -27,7 +27,7 @@ git checkout HEAD~2 -b musica
 echo Cammini sul lato sinistro della strada. >> io
 git commit -am "Lato sinistro"
 
-echo Siccome sei un po' in ritardo, inizi a correre. Qualcuno butta un pianoforte dalla finestra e ti schiaccia. >> io
+echo "Siccome sei un po' in ritardo, inizi a correre. Qualcuno butta un pianoforte dalla finestra e ti schiaccia." >> io
 git commit -am "Che bello"
 
 git checkout HEAD^ -b gelato

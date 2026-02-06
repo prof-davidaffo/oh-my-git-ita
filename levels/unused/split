@@ -8,7 +8,7 @@ Qui entrambe le modifiche sono finite in un solo commit! Dividile in due commit.
 [setup]
 
 echo qualcosa > file_uno
-echo qualcos'altro > file_due
+echo "qualcos'altro" > file_due
 git add .
 git commit -m "Commit iniziale"
 
@@ -16,8 +16,8 @@ echo questo dovrebbe succedere prima >> file_uno
 echo e questo dovrebbe succedere dopo >> file_due
 git commit -am "Entrambi insieme"
 
-echo questa e' un'altra modifica >> file_uno
-echo questa e' un'altra modifica >> file_due
+echo "questa e' un'altra modifica" >> file_uno
+echo "questa e' un'altra modifica" >> file_due
 git commit -am "Qualcos'altro"
 
 [win]
