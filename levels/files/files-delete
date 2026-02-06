@@ -10,23 +10,23 @@ Rimuovi tutte le ragnatele che trovi con la carta remove!
 
 [cli]
 
-Nella riga di comando puoi eliminare facilmente tutti i file che finiscono per -web usando questo comando:
+Nella riga di comando puoi eliminare facilmente tutti i file che finiscono per -ragnatela usando questo comando:
 
-    rm *web
+    rm *ragnatela
 
 [setup]
 
-echo Una piccola ragnatela e' vicino alla finestra. > ragnatela_piccola
-echo Una grande ragnatela pende sopra il letto. > ragnatela_grande
+echo Una piccola ragnatela vicino alla finestra. > piccola_ragnatela
+echo Una grande ragnatela pende sopra il letto. > grande_ragnatela
 echo Un letto accogliente. > letto
-echo Una ragnatela molto spessa e' proprio accanto alla porta. > ragnatela_spessa
+echo Una ragnatela molto spessa proprio accanto alla porta. > spessa_ragnatela
 
 [win]
 
 # Rimuovi tutte le ragnatele.
-! ls | grep ragnatela_spessa &&
-! ls | grep ragnatela_grande &&
-! ls | grep ragnatela_piccola
+! ls | grep spessa_ragnatela &&
+! ls | grep grande_ragnatela &&
+! ls | grep piccola_ragnatela
 
 # Ma assicurati di tenere il letto!
 ls | grep letto
