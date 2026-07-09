@@ -114,7 +114,16 @@ func set_energy(new_energy):
 
 func set_id(new_id):
 	id = new_id
-	var art_path = "res://cards/%s.svg" % new_id
+	var art_id = new_id
+	var art_aliases = {
+		"switch": "checkout",
+		"switch-create": "branch",
+		"restore": "checkout-file",
+		"restore-staged": "reset-file"
+	}
+	if art_aliases.has(new_id):
+		art_id = art_aliases[new_id]
+	var art_path = "res://cards/%s.svg" % art_id
 	var file = File.new()
 	#if file.file_exists(art_path):
 	var texture = load(art_path)
@@ -136,7 +145,7 @@ func dropped_on(other):
 		else:
 			argument = other.id
 			
-		if (command.begins_with("git checkout") or command.begins_with("git rebase") or command.begins_with("git branch -D")) and argument.begins_with("refs/heads"):
+		if (command.begins_with("git checkout") or command.begins_with("git switch") or command.begins_with("git rebase") or command.begins_with("git branch -D")) and argument.begins_with("refs/heads"):
 			argument = Array(argument.split("/")).pop_back()
 			
 		var arg_regex = RegEx.new()

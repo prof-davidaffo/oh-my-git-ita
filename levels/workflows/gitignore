@@ -1,10 +1,15 @@
 title = Ignorare file
+cards = add commit-auto
 
 [description]
 
-Quel pollo corre in giro di continuo e cambia spesso. Non vogliamo averlo nei nostri commit.
+Il file `pollo` cambia di continuo. Non vogliamo averlo nei nostri commit.
 
-Aggiungilo al file .gitignore e prova a usare `git add .`!
+Aggiungilo al file `.gitignore` e prova a usare `git add .`: Git deve continuare a vedere `importante`, ma ignorare `pollo`.
+
+[cli]
+
+Puoi controllare se una regola funziona con `git check-ignore pollo`.
 
 [setup]
 
@@ -16,3 +21,11 @@ git commit -m "Commit iniziale"
 [actions]
 
 echo "$RANDOM" > pollo
+
+[win]
+
+# Fai in modo che Git ignori il file pollo.
+git check-ignore -q pollo
+
+# Assicurati che pollo non finisca nell'index.
+test -z "$(git status --porcelain -- pollo)"

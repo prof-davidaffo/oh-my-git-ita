@@ -1,11 +1,11 @@
-title = Fare checkout dei file dall'index
-cards = add reset-file checkout-file commit
+title = Ripristinare file dalla working directory
+cards = add restore-staged restore commit
 
 [description]
 
-Hai fatto modifiche ai tuoi file, ma decidi che non vuoi tenerle! Per questo puoi usare `git checkout`!
+Hai fatto modifiche ai tuoi file, ma decidi che non vuoi tenerle! Oggi il comando piu' chiaro per questo e' `git restore`.
 
-Cosa succede se hai gia' aggiornato l'index, come nel file c? Devi prima resettare l'index!
+Cosa succede se hai gia' aggiornato l'index, come nel file c? Devi prima toglierlo dall'index con `git restore --staged`, poi puoi ripristinare il file.
 
 [setup]
 

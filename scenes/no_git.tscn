@@ -94,7 +94,9 @@ margin_left = 20.0
 margin_top = 21.0
 margin_right = 546.0
 margin_bottom = 252.0
-text = "Ciao! Sembra che tu non abbia ancora Git installato!
+text = "Ciao! Sembra che tu non abbia ancora Git installato, oppure che la versione installata sia troppo vecchia.
+
+Serve Git 2.23 o successivo.
 
 Su Linux, installalo dal tuo gestore pacchetti, di solito il pacchetto si chiama \"git\"!
 

@@ -1,5 +1,5 @@
 title = Resettare i file nell'index
-cards = add reset-file commit
+cards = add restore-staged commit
 
 [description]
 
@@ -9,7 +9,7 @@ Per esempio, queste candele si sono spente e quella modifica e' stata aggiunta.
 
 Ma decidi che e' stato un errore! Vuoi spegnere solo la candela rossa nel prossimo commit!
 
-Se hai gia' aggiornato l'index a un file modificato, ma vuoi resettarlo, puoi usare `git reset`!
+Se hai gia' aggiornato l'index a un file modificato, ma vuoi toglierlo dal prossimo commit, puoi usare `git restore --staged`!
 
 [setup]
 

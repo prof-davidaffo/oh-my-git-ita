@@ -28,7 +28,7 @@ clean:
 
 cache/portablegit.7z.exe:
 	mkdir -p cache
-	wget https://github.com/git-for-windows/git/releases/download/v2.28.0.windows.1/PortableGit-2.28.0-64-bit.7z.exe -O cache/portablegit.7z.exe
+	wget https://github.com/git-for-windows/git/releases/download/v2.55.0.windows.2/PortableGit-2.55.0.2-64-bit.7z.exe -O cache/portablegit.7z.exe
 
 dependencies/windows/git/: cache/portablegit.7z.exe
 	7zr x cache/portablegit.7z.exe -odependencies/windows/git/ -y

@@ -30,6 +30,26 @@
         "description": "Resetta le modifiche in un file locale."
     },
     {
+        "id": "switch",
+        "command": "git switch [ref]",
+        "description": "Passa a un branch esistente."
+    },
+    {
+        "id": "switch-create",
+        "command": "git switch -c [string]",
+        "description": "Crea un nuovo branch e passa subito a quel branch."
+    },
+    {
+        "id": "restore",
+        "command": "git restore [file]",
+        "description": "Ripristina un file nella working directory usando la versione dell'ultimo commit."
+    },
+    {
+        "id": "restore-staged",
+        "command": "git restore --staged [file]",
+        "description": "Togli un file dall'index senza cambiare il contenuto nella working directory."
+    },
+    {
         "id": "checkout-from",
         "command": "git checkout [commit, ref] [file]",
         "description": "Ottieni il contenuto del file dal commit specificato e resetta sia la working directory sia l'index a quello."

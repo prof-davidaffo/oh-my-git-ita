@@ -38,7 +38,7 @@ func _ready():
 #	print(cmd)
 #	helpers.crash(":)")
 
-	if global_shell.run("command -v git &>/dev/null && echo yes || echo no") == "no\n":
+	if global_shell.run("command -v git &>/dev/null && echo yes || echo no") == "no\n" or not _git_supports_modern_commands():
 		game.skipped_title = true
 		get_tree().change_scene("res://scenes/no_git.tscn")
 	else:
@@ -68,6 +68,18 @@ func _bash_executable():
 		return "dependencies/windows/git/usr/bin/bash.exe"
 	else:
 		return "bash"
+
+func _git_supports_modern_commands():
+	var version = global_shell.run("git --version")
+	var parts = version.split(" ")
+	if parts.size() < 3:
+		return false
+	var numbers = parts[2].split(".")
+	if numbers.size() < 2:
+		return false
+	var major = int(numbers[0])
+	var minor = int(numbers[1])
+	return major > 2 or (major == 2 and minor >= 23)
 
 func shell_received(text):
 	print(text)

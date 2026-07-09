@@ -1,9 +1,9 @@
 title = Clonare un repo
-cards = clone commit-auto reset-hard checkout file-new branch
+cards = clone commit-auto reset-hard switch file-new switch-create
 
 [description]
 
-Il tuo amico ha un problema! Clona il repo che si trova in `../friend`, crea un branch chiamato "soluzione" e risolvi il problema in quel branch. Quando sei pronto, fai una "Pull Request" usando `git tag pr`.
+Il tuo amico ha un problema! Clona il repo che si trova in `../friend`, crea un branch chiamato "soluzione" con `git switch -c` e risolvi il problema in quel branch. Quando sei pronto, fai una "Pull Request" usando `git tag pr`.
 
 
 [setup]

@@ -1,11 +1,11 @@
 title = Ripristinare un file eliminato
-cards = checkout
+cards = restore
 
 [description]
 
 Ops, hai eliminato il file "tema", su cui hai lavorato tutta la notte!
 
-Per fortuna, Git e' qui per aiutarti! Puoi usare `git checkout` per ripristinare il file!
+Per fortuna, Git e' qui per aiutarti! Puoi usare `git restore` per ripristinare il file dall'ultimo commit!
 
 [setup]
 
